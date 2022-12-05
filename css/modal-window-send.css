@@ -1,0 +1,108 @@
+/* Модальное окно для 01-Header, 03-Заказать звонок, 06-Полный перечень услуг */
+.modal-window-form-send {
+	display: none;
+}
+
+.modal-window-form-send:before {
+	content: '';
+	background: #000;
+	position: fixed; 
+	left: 0;
+	top: 0;
+	width: 100%;
+	opacity: 0.7;
+	z-index: 2;
+}
+
+
+/* стили к HTML коду модального окна */
+.modal-window {
+	position: fixed;
+	top: 0;
+	left: 200px;
+	padding: 40px;
+	width: 70%;
+	background: #fff;
+	border: none;
+	z-index: 3;
+	opacity: 1;	
+	/* border: 1px solid #4290e0; */
+}
+
+
+/* header в модальном окне */
+.box-text h2 {
+	font-size: 27px;
+	font-weight: 600;
+	margin-bottom: 20px;
+}
+
+.box-text h2 span {
+	color: #4290e0;
+}
+
+.box-text p {
+	font-size: 16px;
+}
+
+/* .box-blue {
+
+} */
+
+
+/* Форма ввода в модальном окне */
+.modal-form-box {
+	margin-top: 20px;
+}
+
+.modal-form-box h3 {
+	margin-bottom: 10px;
+}
+
+.modal-form-box input {
+	height: 50px;
+	margin-bottom: 15px;
+	padding-left: 20px;
+	border: none;
+	border-radius: 0;
+	background-color: rgb(243, 243, 243);
+	font-size: 16px;
+}
+
+
+/* Кнопки "Оттправить" и "Закрыть" в модальном окне */
+.modal-btn-box {
+	display: flex;
+	margin-top: 30px;
+	/* background-color: aqua; */
+}
+
+.modal-btn-box p {
+	font-size: 16px;
+}
+
+.modal-btn-box button {
+	width: 150px;
+    border: 2px solid #292929;
+	border-radius: 0;
+	margin-left: 40px;
+    padding: 10px 0;
+    font-size: 18px;
+    font-weight: 500;
+    color: #2d2d2d;
+    background-image: linear-gradient(135deg, #4290e0 50%, transparent 50%);
+    background-position: 100%;
+    background-size: 400%;
+    transition: background 400ms ease-in-out;
+}
+
+
+.modal-btn-box button:hover {
+    background-position: 0;    
+}
+
+/* .btn-close-modal-window {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+} */

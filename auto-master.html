@@ -1,0 +1,988 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">		
+		<!-- bootstrap core CSS -->
+		<link rel="stylesheet" href="examples/libs/bootstrap-4/bootstrap.min.css">
+		<link rel="stylesheet" href="../assets/dist/css/bootstrap.min.css">
+		<link rel="stylesheet" href="1-bootstrap-5.1.3/css/bootstrap.min.css">
+		<link rel="stylesheet" href="1-bootstrap-5.1.3/css/bootstrap.min-5.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+		<!-- fonts шрифты -->
+		<link rel="stylesheet" href="fonts/css/all.min.css">
+		
+		<!-- css -->
+		<link rel="stylesheet" href="css/auto-hr.css">
+		<link rel="stylesheet" href="css/01-auto-header.css">
+		<link rel="stylesheet" href="css/02-auto-slider-title.css">
+		<link rel="stylesheet" href="css/03-auto-send-form.css">
+		<link rel="stylesheet" href="css/04-auto-services.css">
+		<link rel="stylesheet" href="css/05-auto-advantages.css">
+		<link rel="stylesheet" href="css/06-auto-list-services.css">
+		<link rel="stylesheet" href="css/07-auto-statistics-video.css">
+		<link rel="stylesheet" href="css/08-auto-gallery-works.css">		
+		<link rel="stylesheet" href="css/09-auto-about-us.css">
+		<link rel="stylesheet" href="css/10-auto-evaluate-repairs.css">
+		<link rel="stylesheet" href="css/11-auto-promo.css">
+		<link rel="stylesheet" href="css/12-auto-footer.css">
+        <link rel="stylesheet" href="css/container-fix-element.css">
+		<link rel="stylesheet" href="css/modal-window-send.css">
+		<link rel="stylesheet" href="css/modal-window-send-valid.css">
+		<link rel="stylesheet" href="css/modal-window-item.css">
+		<link rel="stylesheet" href="css/modal-window-chat.css">
+
+		<title>Авто Мастер</title>
+	</head>
+
+	<body>	
+        
+        <!-- 01 Header -->
+        <header>
+			<div class="container-header">
+
+                <!-- 1) блок для логотипа -->
+                <div class="container-header-logo">
+                    <img src="icons/logo.png" alt="car-brand">
+                </div>
+
+
+                <!-- 2) блок справа, сост. из 2 строк, от блока логотипа -->
+                <div class="container-header-content">
+                
+                    <!-- строка верхняя - график работы, адрес и кнопка связи -->
+                    <div class="header-content-row-upper">
+
+                        <div class="row-upper-block-decoration"></div>
+                        
+                        <div class="row-upper-worktime-adress">
+                            <p class="p-worktime">Понедельник-Воскресенье <span>10:00 - 20:00</span></p>
+							<p>г. Рязань, ул. Баженова 36</p>
+                        </div>
+						
+
+                        <div class="row-upper-btn">
+                            <button class="btn-open-modal-window" data-hystmodal="#myModal" id="myModal" type="button" data-toggle="modal" data-target="#exampleModalCenter">Перезвоните Мне</button>
+                        </div>
+                        
+                    </div>
+
+                    <!-- строка нижняя - текст, емэйл и номер телефона -->
+                    <div class="header-content-row-lower">
+                        <div class="row-lower-text col-8">
+                            <p>Для связи с нами Вы можете написать нам <a href="">automaster@mail.ru</a> или позвонить</p>
+                        </div>
+
+                        <div class="row-lower-phone col">
+                            <p>+7 <span>(4912)</span> 00-00-00</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+			<!-- меню навигации -->
+			<div class="container-header-nav-menu">
+				<nav class="navbar-dark">
+					<div class="link active-link">
+						<a class="nav-link active" href="#containerSlider">ГЛАВНАЯ</a>
+					</div>
+
+					<div class="link">
+						<a class="nav-link" href="#containerServices">ОСНОВНЫЕ УСЛУГИ</a>
+					</div>
+
+					<div class="link">
+						<a class="nav-link" href="#containerListServices">ВСЕ УСЛУГИ</a>
+					</div>
+
+					<div class="link">
+						<a class="nav-link" href="#containerStatistics">СТАТИСТИКА</a>
+					</div>
+
+					<div class="link">
+						<a class="nav-link" href="#containerWorks">НАШИ РАБОТЫ</a>
+					</div>
+
+					<div class="link">
+						<a class="nav-link" href="#containerAbout">О НАС</a>
+					</div>
+
+					<div class="link">
+						<a class="nav-link" href="#promo">АКЦИИ</a>
+					</div>
+
+					<div class="link">
+						<a class="nav-link" href="#contact">КОНТАКТЫ</a>
+					</div>
+				</nav>
+			</div>
+		</header>
+		
+
+
+        <!-- 02 Слайдер с информацией об услугах с фоном-картинкой -->
+		<div class="container-slider-background" id="containerSlider">
+			<input checked type="radio" name="slider" id="slide1" />
+	
+			<input type="radio" name="slider" id="slide2" />
+			<input type="radio" name="slider" id="slide3" />
+			<input type="radio" name="slider" id="slide4" />
+	
+			<div class="slider-wrapper">
+				<div class="slider-inner">
+					<article>
+						<div class="text-h">
+							<h2>Покраска Автомобилей От 1 Дня</h2>
+							<h1>Кузовной Ремонт</h1>
+							<h3>Точно в цвет или перекрасим за свой счет</h3>
+						</div>
+	
+						<img src="icons/slide1.jpg" />
+					</article>
+					
+					<article>
+						<div class="text-h">
+							<h2>Гарантия От Года На Все Услуги</h2>
+							<h1>Работаем <br>По Договору</h1>
+							<h3>Работаем с юридическими лицами</h3>
+						</div>
+	
+						<img src="icons/slide2.jpg" />
+					</article>
+	
+					<article>
+						<div class="text-h">
+							<h2>Работаем с 2006 года</h2>
+							<h1>Доверьтесь <br>Профессионалам</h1>
+							<h3>Поможем сэкономить на запчастях</h3>
+						</div>
+	
+						<img src="icons/slide3.jpg" />
+					</article>
+				</div>
+			</div>
+			
+			<div class="slider-prev-next-control">
+				<label for="slide1"></label>
+				<label for="slide2"></label>
+				<label for="slide3"></label>
+			</div>	
+		</div>		
+
+
+
+        <!-- 03 Заказать звонок -->
+		<div class="container-send-form">
+			<ul>
+				<li class="send-form-info">
+					<h1 class="info-text-white">Закзать звонок</h1>
+					<h1 class="info-text-blue">Форма связи</h1>
+				</li>
+
+				<li class="send-form-text">
+					<p>Объясним ценообразование каждого элемента, подберем запчасти на ваш автомобиль.</p>
+				</li>
+
+				<li class="send-form-banner">
+					<img src="icons/banner-key.png" alt="auto">
+				</li>
+
+				<li class="send-form-btn btn-open-modal-window">
+					<button id="headerBtn" type="button" data-toggle="modal" data-target="#exampleModalCenter">Закзать звонок</button>
+				</li>
+			</ul>
+		</div>	
+
+
+
+        <!-- 04 Таблица с основным перечнем услуг и фото -->
+		<div class="container-services" id="containerServices">
+			<h1>Что мы делаем?</h1>
+			<p>Основные услуги, которые мы выполняем</p>			
+
+			<!-- стилизация линии типа <hr> -->
+			<div class="container-line">
+				<div class="line-long"></div>
+				<div class="line-short"></div>
+				<div class="line-short"></div>
+			</div>
+			
+			<!-- таблица-сетка основным услуг -->
+			<div class="container-box">
+				<div class="box-text-1">
+					<h2>Малярные <br> работы</h2>
+					<p>При выполнении малярных работ может производиться локальная покраска</p>
+					<h1>Сервис</h1>
+
+					<!-- текст "Жми!", который появляется при наведении на ячейку сетки -->
+					<div class="hover-text">
+						<h1>Жми!</h1>
+					</div>
+				</div>
+
+				<div class="box-img-1">
+					<img src="icons/grid-1.jpg" alt="">
+				</div>
+
+				<div class="box-text-2">
+					<h2>Кузовные<br>работы</h2>
+					<p>Наши специалисты всю имеют опыт работы от 6 до 15 лет</p>
+					<h1>Мастер</h1>
+
+					<!-- текст "Жми!", который появляется при наведении на ячейку сетки -->
+					<div class="hover-text">
+						<h1>Жми!</h1>
+					</div>
+				</div>
+
+				<div class="box-img-2">
+					<img src="icons/grid-2.jpg" alt="">
+				</div>
+
+				<div class="box-text-3">
+					<h2>Тюнинг<br>и установка обвесов</h2>
+					<p>Работаем с крупнейшими производителями и поставщиками оригинальных обвесов</p>
+					<h1>Авто</h1>	
+					
+					<!-- текст "Жми!", который появляется при наведении на ячейку сетки -->
+					<div class="hover-text">
+						<h1>Жми!</h1>
+					</div>
+				</div>
+
+				<div class="box-img-3">
+					<img src="icons/grid-3.jpg" alt="">
+				</div>
+
+				<div class="box-text-4">
+					<h2>Слесарные<br>работы</h2>
+					<p>Мастера-консультанта имеют сертификаты, подтверждающие компетентность механиков</p>
+					<h1>Шино</h1>
+
+					<!-- текст "Жми!", который появляется при наведении на ячейку сетки -->
+					<div class="hover-text">
+						<h1>Жми!</h1>
+					</div>
+				</div>
+
+				<div class="box-img-4">
+					<img src="icons/grid-4.jpg" alt="">
+				</div>
+
+				<div class="box-text-5">
+					<h2>Полировка<br>авто</h2>
+					<p>Полировка специальными средствами устранит налеты, восстановит лакокрасочное покрытие, удалит мелкие царапины лака</p>
+					<h1>Монтаж</h1>
+
+					<!-- текст "Жми!", который появляется при наведении на ячейку сетки -->
+					<div class="hover-text">
+						<h1>Жми!</h1>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+
+        <!-- 05 Раздел - наши преимущества -->
+		<div class="container-advantages">
+			<h1>100% Гарантия результата</h1>
+			<p>Мы предлагаем полный комплекс услуг по ремонту и техническому обслуживанию автомобилей</p>
+
+			<div class="advantages row">
+				<div class="advantage-box-1 col-4">
+					<div class="advantage-box-img">
+						<img src="icons/icon-car-1.png" alt="">
+					</div>
+
+					<div class="advantage-box-text">
+						<h3>Все марки автомобилей</h3>
+						<p>Мы предоставляем широкий спектр услуг по ремонту и техническому обслуживанию автомобилей всех марок и моделей, даже экзотических и винтажных.</p>
+					</div>
+				</div>
+
+				<div class="advantage-box-2 col-4">
+					<div class="advantage-box-img">
+						<img src="icons/icon-car-2.png" alt="">
+					</div>
+		
+					<div class="advantage-box-text">
+						<h3>Разнообразие услуг</h3>
+						<p>Главный принцип нашей работы - предлагать широкий спектр качественных услуг по ремонту автомобилей, и мы делаем это с первого дня нашей работы.</p>
+					</div>
+				</div>
+
+				<div class="advantage-box-3 col-4">
+					<div class="advantage-box-img">
+						<img src="icons/icon-car-3.png" alt="">
+					</div>
+		
+					<div class="advantage-box-text">
+						<h3>Клиенто-<br>ориентированность</h3>
+						<p>Вместе с Вами, стоя у автомобиля, поэтапно расскажем, как будет проходить ремонт и обоснуем цену.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+
+        <!-- 06 Полный перечень услуг -->
+		<!-- фон картинка неподвижная -->
+		<div class="container-list-services" id="containerListServices" style="background-image: url(icons/backgraund.jpg);">
+			<div class="list-item">	
+				
+				<!-- 1 столбец с заголовком -->
+				<div class="item-col-1">
+					<h1>Ремонтные Услуги, которые <span> Мы Предлагаем</span></h1>
+
+					<!-- стилизация линии типа <hr> -->
+					<div class="container-line">
+						<div class="line-long"></div>
+						<div class="line-short"></div>
+						<div class="line-short"></div>
+					</div>
+
+					<p>Мы предоставляем полный спектр услуг по ремонту любой части кузова для всех марок и моделей автомобилей, независимо от причины. Это включает в себя все, от стоек, амортизаторов и концов рулевых тяг до шаровых шарниров, пружин и в основном всего, что входит в ремонт всей части автомобиля.</p>
+				
+					<div class="btn-evaluate-repairs btn-open-modal-window">
+						<button>СВЯЗАТЬСЯ с нами</button>
+					</div>
+				</div>
+				
+
+				<!-- 2 столбец с перечнем услуг -->
+				<div class="item-col-2">
+					<ol>
+						<li>Общий ремонт и техническое обслуживание автомобилей</li>
+						<li>Ремонт топливной системы</li>
+						<li>Ремонт и замена трансмиссии</li>
+						<li>Ремонт выхлопной системы</li>
+						<li>Техническое обслуживание системы охлаждения двигателя</li>
+						<li>Электрическая диагностика</li>
+						<li>Ремонт запуска и зарядки</li>
+						<li>Выравнивание колес</li>
+						<li>Оси CV</li>
+						<li>Компьютерная диагностика</li>
+					</ol>
+				</div>
+
+
+				<!-- 3 столбец с перечнем услуг -->
+				<div class="item-col-3">
+					<ol>
+						<li>Рекомендуемое производителем обслуживание</li>
+						<li>Ремонт и замена тормозов</li>
+						<li>Ремонт кондиционера</li>
+						<li>Заправка кондиционера</li>
+						<li>Профилактическое обслуживание </li>
+						<li>Замена масла</li>
+						<li>Обслуживание тормозов</li>
+						<li>Промывка и ремонт системы охлаждения двигателя</li>
+						<li>Ремонт рулевого управления и подвески</li>
+					</ol>
+				</div>
+			</div>
+
+			<!-- стилизация h1 как фон -->
+			<h1 class="list-item-h1-background">Авто Мастер</h1>
+		</div>
+
+
+
+		<!-- 07 Статистика, Видео -->
+		<div class="container-statistics-and-video" id="containerStatistics">
+			<div class="content-box">
+				<h1>Статистика Ремонта Автомобилей</h1>
+				<p>Наша Техническая статистика по ремонту автомобилей. Независимо от того, приходите ли вы на плановый осмотр, замену масла или ремонт, мы обещаем, что вы будете полностью удовлетворены нашей работой.</p>
+						
+				<!-- Статистика -->
+				<div class="statistics-box">
+					<div class="statistics-box-info">
+						<span>16</span>
+						<div>
+							<p>Многолетний опыт</p>
+						</div>
+					</div>
+
+					<div class="statistics-box-info">
+						<span>23<span class="small-letter-k">K</span></span>
+						<div>
+							<p>Отремонтированные автомобили</p>
+						</div>
+					</div>
+
+					<div class="statistics-box-info">
+						<span>20</span>
+						<div>
+							<p>Сертифицированные рабочие</p>
+						</div>
+					</div>
+
+					<div class="statistics-box-info">
+						<span>100%</span>
+						<div>
+							<p>Довольные клиенты</p>
+						</div>
+					</div>
+				</div>				
+			</div>
+
+			<!-- Видео -->
+			<div class="video-box">
+				<video controls poster="video/VID-20221116-WA0009_Moment-black.jpg">
+					<source src="video/VID-20221116-WA0009.mp4" type="video/mp4">
+					<!-- <source src="video/VID-20221116-WA0009.webm" type="video/webm"> -->
+				</video>
+			</div>
+		</div>
+
+
+
+		<!-- 08 Наши работы -->
+		<div class="container-gallery-our-works" id="containerWorks" style="background-image: url(icons/auto_bg-grey.jpg);">
+			<h1>Наши <span>Работы</span></h1>
+			<p>Посмотрите некоторые наши выполненные работы </p>
+			
+			<div class="gallery-photo">
+
+				<div class="photo-box">
+					<div>1</div>
+
+					<a href="slides-1-painting-works.html">
+						<img  src="icons/painting-01-grey.jpg" alt="painting" onmouseout="this.src='icons/painting-01-grey.jpg'" onmouseover="this.src='icons/painting-01.jpg'" >
+					</a>
+				</div>
+
+				<div class="photo-box">
+					<div>2</div>
+
+					<a href="slides-2-locksmith-work.html">
+						<img src="icons/locksmith-work-1-grey.jpg" alt="locksmith" onmouseout="this.src='icons/locksmith-work-1-grey.jpg'" onmouseover="this.src='icons/locksmith-work-1.jpg'" >
+					</a>
+				</div>
+
+				<div class="photo-box">
+					<div>3</div>
+
+					<a href="slides-3-bodywork.html">
+						<img src="icons/bodywork-1-grey.jpg" alt="bodywork" onmouseout="this.src='icons/bodywork-1-grey.jpg'" onmouseover="this.src='icons/bodywork-1.jpg'" >
+					</a>
+				</div>
+				
+				<div class="photo-box">
+					<div>4</div>
+					
+					<a href="slides-4-polishing-car.html">
+						<img src="icons/polishing-1-grey.jpg" alt="polishing" onmouseout="this.src='icons/polishing-1-grey.jpg'" onmouseover="this.src='icons/polishing-1.jpg'" >
+					</a>
+				</div>
+
+			</div>
+		</div>
+
+
+
+        <!-- 09 О нас -->	
+        <div class="container-about-us" id="containerAbout">
+            <h1>Почему стоит выбрать именно нас?</h1>
+			<p>Мы объясняем из чего складывается цена на услугу, помогаем подобрать и сэкономить на запчастях</p>
+        
+            <div class="container-line">
+				<div class="line-long"></div>
+				<div class="line-short"></div>
+				<div class="line-short"></div>
+			</div>
+
+            <div class="about-us-info row">
+				<div class="about-us-info-1 col">
+					<div class="info-icon">
+						<i class="fa-solid fa-hand-holding-dollar"></i>
+					</div>
+
+					<h1>Оценка</h1>
+					<p>Мы предлагаем точную оценку услуг по справедливой цене</p>
+				</div>
+		
+				<div class="about-us-info-2 col">
+					<div class="info-icon">
+						<i class="fa-solid fa-handshake"></i>
+					</div>
+					
+					<h1>Доверие</h1>
+					<p>Нам доверяют уже с 2006 года</p>
+				</div>
+				
+				<div class="about-us-info-3 col">
+					<div class="info-icon">
+						<i class="fa-solid fa-award"></i>
+					</div>
+					
+					<h1>Гарантия</h1>
+					<p>Мы даем гарантию от года на все свои виды услуг</p>
+				</div>
+			</div>
+        
+        </div>
+
+
+
+		<!-- 10 Оценка состояния автомобиля -->
+		<div class="container-evaluate-repairs">
+			<h1>Оценка Ремонта <span>Автомобиля</span></h1>
+			<p>Получите примерную оценку автомобиля на основе заполненных данных</p>
+			
+			<form class="container-fluid row">				
+
+				<!-- категория авто -->
+				<div class="form-category col-2">
+					<input class="car-category text-black" list="carCategory" id="carCategoryList" placeholder="Категория">
+
+					<datalist id="carCategory">
+						<option>Легковые авто</option>
+						<option>Мотоциклы</option>
+					</datalist>
+				</div>
+
+				<!-- марка авто -->
+				<div class="form-brand col-2">
+					<input class="car-brand" list="carBrand" id="carBrandList" placeholder="Марка">
+					
+					<datalist id="carBrand">
+						<option>Acura</option>
+						<option>Alfa Romeo</option>
+						<option>Audi</option>
+						<option>Bentley</option>
+						<option>BMW</option>
+						<option>Bugatti</option>
+						<option>Cadillac</option>
+						<option>Changan</option>
+						<option>Chery</option>
+						<option>Chevrolet</option>
+						<option>Citroen</option>
+						<option>Daewoo</option>
+						<option>Datsun</option>
+						<option>Dodge</option>
+						<option>Ferrari</option>
+						<option>FIAT</option>
+						<option>Ford</option>
+						<option>GAZ</option>
+						<option>Geely</option>
+						<option>Genesis</option>
+						<option>Great Wall</option>
+						<option>Haval</option>
+						<option>Honda</option>
+						<option>Hyundai</option>
+						<option>Infiniti</option>
+						<option>Jaguar</option>
+						<option>Jeep</option>
+						<option>Kia</option>
+						<option>LADA</option>
+						<option>Lamborghini</option>
+						<option>Land Rover</option>
+						<option>Lexus</option>
+						<option>Lifan</option>
+						<option>Maserati</option>
+						<option>Maybach</option>
+						<option>Mazda</option>
+						<option>Mercedes-Benz</option>
+						<option>MINI</option>
+						<option>Mitsubishi</option>
+						<option>Nissan</option>
+						<option>Opel</option>
+						<option>Peugeot</option>
+						<option>Porsche</option>
+						<option>Ravon</option>
+						<option>Renault</option>
+						<option>Rolls-Royce</option>
+						<option>Skoda</option>
+						<option>Smart</option>
+						<option>SsangYong</option>
+						<option>Subaru</option>
+						<option>Suzuki</option>
+						<option>Saab</option>
+						<option>Toyota</option>
+						<option>UAZ</option>
+						<option>Volkswagen</option>
+						<option>Volvo</option>                       
+					</datalist>
+				</div>
+
+				<!-- год выпуска авто -->
+				<div class="form-range col-2">
+					<input class="date-range" list="dateRange" id="dateRangeList" placeholder="Год выпуска" type="datetime">
+					
+					<datalist id="dateRange"></datalist>
+				</div>
+
+				<!-- добавить файл -->
+				<div class="form-file col">					
+					<input type="file" name="file" id="inputGroupFile01" aria-describedby="inputGroupFileAddon01">					
+				</div>
+
+				<div class="form-btn-send col-2">
+					<button>ОТПРАВИТЬ</button>
+				</div>				
+			</form>
+		</div>
+
+
+		
+		<!-- 11 Акция -->
+		<div class="container-promo" id="promo">
+			<div class="promo-box-banner">
+				<div class="banner-img">
+					<img src="icons/locksmith-work-1-grey.jpg" alt="">
+				</div>
+
+				<div class="banner-text">
+					<div class="banner-text-price">
+						<p>Купоны от</p>
+						<h2><span>$</span> 25 off</h2>
+						<h3>Ремонт!</h3>
+					</div>
+
+					<div class="banner-text-info">
+						<h3>Наше предложение</h3>
+						<p>Любая услуга стоимостью 250 долларов и более</p>
+						<button>Посмотреть все купоны</button>
+					</div>
+				</div>
+			</div>
+
+			<div class="promo-box-text">
+				<h1>Качественный Сервис и Удовлетворенность<br>
+				<span>Клиентов!</span></h1>
+				
+				<div class="container-line">
+					<div class="line-long"></div>
+					<div class="line-short"></div>
+					<div class="line-short"></div>
+				</div>
+
+				<p>Мы используем новейшее диагностическое оборудование, чтобы гарантировать, что ваш автомобиль будет отремонтирован или обслужен должным образом и своевременно.</p>
+
+				<ol>
+					<li>Гарантия 24 месяца</li>
+					<li>Программа поощрения клиентов</li>
+					<li>Сертифицированные специалисты</li>
+					<li>Помощь на дороге</li>
+				</ol>
+			</div>
+		</div>
+
+
+
+		<!-- 12 Footer -->
+		<footer id="contact">
+			<div class="footer-section-1 row">
+
+				<!-- контактная информация -->
+				<div class="container-info col">
+					<!-- <h1>График работы</h1> -->
+
+					<div class="container-map">
+						<h1>Мы находимся здесь</h1>
+						<div class="embed-responsive embed-responsive-21by9">
+							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1155.4428507574396!2d39.73632535816335!3d54.60600614859037!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4149e21f92c1795b%3A0xc5fa78cbd8709e16!2z0YPQuy4g0JHQsNC20LXQvdC-0LLQsCwgMzYsINCg0Y_Qt9Cw0L3RjCwg0KDRj9C30LDQvdGB0LrQsNGPINC-0LHQuy4sIDM5MDAzNQ!5e0!3m2!1sru!2sru!4v1669632684646!5m2!1sru!2sru" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+						</div>
+					</div>
+
+					<div class="container-contact-details">
+						<ul>
+							<li>
+								<h2>Контактная информация</h2>
+							</li>
+
+							<li class="contact-details-address">
+								<i class="fa-solid fa-location-dot"></i>
+								г. Рязань, ул. Баженова 36
+							</li>
+
+							<li class="contact-details-phone">
+								<i class="fa-solid fa-phone-volume"></i>
+								+7 (4912) 00-00-00
+							</li>
+
+							<li class="contact-details-email">
+								<i class="fa-solid fa-envelope"></i>
+								<a>automaster@mail.ru</a>
+							</li>
+
+							<li>
+								<h2>График работы</h2>
+							</li>
+
+							<li class="contact-details-worktime">
+								<i class="fa fa-calendar"></i>
+								<!-- <i class="fa fa-calendar-check-o"></i> -->
+								Понедельник - Воскресенье
+							</li>
+							
+							<li class="contact-details-worktime">
+								<i class="fa-solid fa-clock"></i>
+								с 10:00 до 19:00
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<!-- Форма обратной связи -->
+				<div class="container-form-communication col-4">
+					<h1>Оставьте заявку на сайте и мы <span>Вам перезвоним</span></h1>
+
+					<form id="form" method="post" action="">
+						<input class="form-control" type="text" id="name" placeholder="Ваше имя" />
+						<input class="form-control" type="text" id="phone" placeholder="Ваш телефон  +7" />
+						<input class="form-control" type="text" id="email" placeholder="Ваш e-mail" />
+						<textarea class="form-control" id="textarea" placeholder="Ваш Вопрос"></textarea>
+				
+						<div class="container-checkbox">
+						   <input id="checkboxYes" type="checkbox" name="checkboxYes" />
+						   <label for="checkboxYes">Я принимаю условия</label>
+						   <button id="submit">ОТПРАВИТЬ</button>
+						</div>	       
+					</form>
+
+	
+				</div>
+			</div>
+
+
+			<!-- ссылки на мессенджеры для связи -->
+			<div class="footer-section-2">
+				<p>© 2022 Услуги по ремонту автомобилей, Все права защищены</p>
+
+				<ul>
+					<li class="li-vk">
+						<a href="https://vk.com"><i class="fa fa-vk" aria-hidden="true"></i></a>
+					</li>
+
+					<li class="li-odnoklassniki"> 
+						<a href="https://ok.ru"><i class="fa fa-odnoklassniki-square" aria-hidden="true"></i></a>
+					</li>
+
+					<li class="li-whatsapp">
+						<a href="https://web.whatsapp.com"><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
+					</li>
+
+					<li class="li-telegram">
+						<a href="https://web.telegram.org"><i class="fa fa-telegram" aria-hidden="true"></i></a>
+					</li>
+
+					<li class="li-facebook">
+						<a href="https://ru-ru.facebook.com"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+					</li>
+
+					<li class="li-twitter">
+						<a href="https://twitter.com"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+					</li>
+
+					<li class="li-instagram">
+						<a href="https://www.instagram.com"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+					</li>					
+				</ul>				
+			</div>
+		</footer>
+		
+		
+
+		<!-- Фиксированные кнопки обратной связи и "вверх" -->
+		<div class="container-fix-element">
+			<div class="btn-contact">
+				<input class="btn-open-modal-window-messengers" type="image" src='icons/icons-chat-white.png' />
+			</div>
+
+			<div class="btn-up">
+				<a>&#8679;</a>
+			</div>
+		</div>
+
+
+		<!-- Модальное окно для 01-Header, 03-Заказать звонок, 06-Полный перечень услуг --> 
+		<div class="modal-window-form-send">
+
+			<!-- HTML код модального окна -->
+			<form id="formModal" class="modal-window">
+						
+				<!-- header в модальном окне -->
+				<div class="modal-header-box">
+					<div class="box-text">
+						<h2>Запланируйте <span>Автосервисное обслуживание</span></h2>
+						<p>Чтобы записаться на обслуживание, позвоните нам по телефону +7(4912)00-00-00 или заполните форму ниже с вашей информацией.</p>
+					</div>
+
+					<!-- <div class="box-blue">
+						<p>Перезвоните Мне</p>
+					</div> -->
+				</div>
+
+				<!-- Форма ввода в модальном окне -->
+				<div class="modal-form-box row">
+					<div class="col">
+						<h3>Контакты</h3>
+						<input class="form-control" type="text" id="yourName" placeholder="Ваше имя">
+						<input class="form-control" type="text" id="yourPhone" placeholder="Ваш номер телефона">
+						<input class="form-control" type="text" id="yourEmail" placeholder=" Ваш e-mail">
+					</div>
+
+					<div class="col">
+						<h3>Данные Авто</h3>
+						<input class="form-control" type="text" id="brandCar" placeholder="Марка авто">
+						<input class="form-control" type="text" id="modelCar" placeholder="Модель авто">
+						<input class="form-control" type="text" id="yearCar" placeholder="Год авто">
+					</div>
+
+					<div class="col">
+						<h3>Информация</h3>
+						<input class="form-control" type="date" id="date" placeholder="">
+						<input class="form-control" type="time" id="time" placeholder="">
+						<input class="form-control" type="file" id="yourPhoto" placeholder="">
+					</div>
+					
+				</div>		
+				
+				<!-- Кнопки "Оттправить" и "Закрыть" в модальном окне -->
+				<div class="modal-btn-box">
+					<div>
+						<p>Обратите, пожалуйста, внимание, что запрошенные Вами дата и время могут быть недоступны.</p>
+					</div>
+
+					<div>
+						<button class="btn" id="submit">ОТПРАВИТЬ</button>
+					</div>
+
+					<div>
+						<button class="btn-close-modal-window btn">ЗАКРЫТЬ</button>
+					</div>
+				</div>
+
+				
+			</form>		
+		</div>
+
+
+		<!-- Модальное окно для 04-Что мы делаем?(основные услуги) --> 
+		<!-- 1)_______ -->
+		<div class="modal-window-item-1">
+
+			<!-- HTML код модального окна -->
+			<div class="modal-window-content-1">						
+				<h1>Малярные работы</h1>
+				<p>Малярные работы – один из самых сложных технологических процессов. Здесь нужно приложить максимум профессиональных усилий мастера, а также задействовать всю необходимую технику и оборудование. В зависимости от поставленных задач и состояния покрытия при выполнении малярных работ на автомобиле может производиться локальная покраска, то есть окрашивание небольшого участка площади, или полная покраска отдельного элемента или кузова целиком.</p>
+				<button class="btn-close-modal-window-item btn">ЗАКРЫТЬ</button>
+			</div>		
+		</div>
+
+		<!-- 2)_______ -->
+		<div class="modal-window-item-2">
+
+			<!-- HTML код модального окна -->
+			<div class="modal-window-content-2">
+				<h1>Кузовные работы</h1>
+				<p>Этапы кузовного ремонта напрямую зависят от его сложности. Одно дело, если только поцарапано лакокрасочное покрытие какой-либо детали, и совсем другое, если в результате аварии деформировался какой-либо элемент кузова авто, пострадала геометрия кузова. Наши специалисты имеют всю необходимую квалификацию и опыт, позволяющие качественно и в срок произвести необходимые кузовные работы с Вашим автомобилем.</p>						
+				<button class="btn-close-modal-window-item btn">ЗАКРЫТЬ</button>
+			</div>		
+		</div>
+
+		<!-- 3)_______ -->
+		<div class="modal-window-item-3">
+
+			<!-- HTML код модального окна -->
+			<div class="modal-window-content-3">						
+				<h1>Тюнинг и установка обвесов</h1>
+				<p>Работаем с крупнейшими производителями и поставщиками оригинальных обвесов. Мы очень внимательно подходим к выбору расходников и материалов, и для своих клиентов мы предоставляем комплектующие по договоренности с компаниями-производителями тюнинга автомобилей.</p>
+				<button class="btn-close-modal-window-item btn">ЗАКРЫТЬ</button>
+			</div>		
+		</div>
+
+		<!-- 4)_______ -->
+		<div class="modal-window-item-4">
+
+			<!-- HTML код модального окна -->
+			<div class="modal-window-content-4">	
+				<h1>Слесарные работы</h1>
+				<p>К слесарному ремонту относятся все виды ремонтных работ, которые не относятся к глубокой диагностике оборудования автомобиля, электроремонту и ремонту кузова. Это — все действия по устранению мелких недочетов в работе автомобиля во время первичной диагностики, осуществления технического осмотра или в процессе использования авто. Перед ремонтом и обслуживанием Вашего автомобиля, Вы всегда можете запросить у мастера-консультанта предъявить сертификаты, подтверждающие компетентность механиков.</p>					
+				<button class="btn-close-modal-window-item btn">ЗАКРЫТЬ</button>
+			</div>		
+		</div>
+
+		<!-- 5)_______ -->
+		<div class="modal-window-item-5">
+
+			<!-- HTML код модального окна -->
+			<div class="modal-window-content-5">						
+				<h1>Полировка автомобиля</h1>
+				<p>Погодные явления ежедневно оказывают негативное воздействие на лакокрасочное покрытие кузова – появляются сколы, следы от химических веществ. Даже для нового транспортного средства характерно подвергаться воздействию внешних факторов. Решение – полировка авто специальными средствами устранит налеты, восстановит лакокрасочное покрытие, удалит мелкие царапины лака.</p>
+				<button class="btn-close-modal-window-item btn">ЗАКРЫТЬ</button>
+			</div>		
+		</div>
+
+
+
+		<!-- Модальное окно для фиксированных кнопок обратной связи --> 
+		<div class="modal-window-chat">
+
+			<!-- HTML код модального окна -->
+			<div class="modal-window-messengers">						
+				<div>
+					<img src="icons/whatsapp-64x64.png" alt="whatsapp">
+				</div>
+
+				<div>
+					<img src="icons/viber-64x64.png" alt="viber">
+				</div>
+
+				<div>
+					<img src="icons/telegram-64x64.png" alt="telegram">
+				</div>
+				
+				<button class="btn-close-modal-window-messengers btn">ЗАКРЫТЬ</button>
+			</div>		
+		</div>
+
+
+
+
+
+		<!-- bootstrap - подключение скриптового файла фреймворка -->
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+		<script src="1-bootstrap-5.1.3/js/bootstrap.min.js"></script>	
+		<script src="1-bootstrap-5.1.3/js/bootstrap.min-5.js"></script>		
+		<script defer src="/examples/libs/jquery/jquery-3.6.0.min.js"></script>
+  		<script defer src="/examples/libs/bootstrap-4/bootstrap.bundle.min.js"></script>		
+		<!-- <script src="../assets/dist/js/bootstrap.bundle.min.js"></script> -->
+
+		<!-- jquery -->		
+		<script src="2-jquery/js/jquery.maskedinput.min.js"></script>
+		<script src="2-jquery/js/jquery-3.5.1.min.js"></script>
+		<script src="2-jquery/js/jquery-3.5.1.slim.min.js"></script>		
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+		<script src="http://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<!-- <script src="jquery.js"></script> -->
+        <!-- <script src="jquery.maskedinput.min.js"></script> -->
+		<script src="https://yandex.st/jquery/2.1.1/jquery.min.js"></script>
+
+		<!-- popper - скриптовой файл, необходимый для работы фреймворка -->
+		<script src="3-popper/js/popper.min.js"></script>		
+
+		<!-- fonts шрифты -->
+		<script src="https://use.fontawesome.com/98eb59ceb1.js"></script>		
+
+		<!-- js -->
+		<script src="js/auto.js"></script>
+        <script  src="js/container-services.js"></script>
+        <script src="js/container-gallery.js"></script>
+		<script src="js/container-fix-element.js"></script>
+		<script src="js/container-send-form.js"></script>
+		<script src="js/modal-window-send.js"></script>
+		<script src="js/modal-window-send-valid.js"></script>
+		<script src="js/modal-window-item.js"></script>
+		<script src="js/modal-window-chat.js"></script>
+		<script src="js/footer-form-valid.js"></script>
+		
+	</body>
+</html>

@@ -1,0 +1,13 @@
+.checkboxYes {
+  display: flex;
+}
+
+.checkboxYes input {
+  margin: 0 25px 0 10px;
+  cursor: pointer;
+}
+
+.error {
+  color: red;
+  margin-left: 15px;
+}

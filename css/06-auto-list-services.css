@@ -1,0 +1,225 @@
+/* Полный перечень услуг */
+.container-list-services {    
+    padding: 0 70px 20px 70px;
+    /* background-image: url(/backgraund.jpg); */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center, center;
+    background-size: auto 100%;
+    background-size: cover;
+}
+
+.list-item {
+    display: flex;
+}
+
+
+/* 1 столбец с заголовком */
+.item-col-1 {
+    width: 45%; 
+    padding: 100px 30px 100px 0;   
+}
+
+.item-col-1 h1 {
+    color: #ffffff;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 40px;
+    font-weight: 600;
+    margin: 0 0 40px 0;
+}
+
+.item-col-1 span {
+    color: #4290e0;
+}
+
+.item-col-1 p {
+    color: #ffffff;
+    font-size: 16px;
+    margin-top: 40px;
+}
+
+.item-col-1 button {
+    border: 2px solid #4290e0;
+    position: relative;
+    left: 0;
+    bottom: -40px;
+    padding: 10px 30px;
+    font-size: 18px;
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0);
+    background-image: linear-gradient(135deg, #f1d14e 50%, transparent 50%);
+    background-position: 100%;
+    background-size: 400%;
+    transition: background 400ms ease-in-out;
+   
+}
+
+.item-col-1 button:hover {
+    color: rgba(0, 0, 0, 0.925);    
+    background-position: 0;    
+}
+
+
+/* 2 и 3 столбцы с перечнем услуг */
+.item-col-2,
+.item-col-3 {
+    width: 30%; 
+    padding: 100px 0;
+    color: #ffffff;    
+}
+
+ol {
+    list-style: none;
+}
+
+ol > li {
+    padding-left: 20px;
+    position: relative;
+    margin: 10px;
+    font-size: 17px;
+}
+
+ol > li:before {
+    content: '✓';
+    position: absolute; 
+    top: -5px; 
+    left: 0;
+    color: #4290e0;
+    font-weight: 900;
+    font-size: 20px;
+}
+
+
+/* стилизация h1 как фон */
+.list-item-h1-background {
+    color: rgba(255, 255, 255, 0.027);
+    font-size: 150px;
+    font-weight: 700;
+    line-height: 0;
+    position: relative;
+    bottom: 45px;
+    left: 0;
+}
+
+
+
+
+
+/* __________________________________________________________________________________________________________________________ */
+
+
+
+
+
+
+@media screen and (min-width: 1601px) {
+
+    /* Полный перечень услуг */
+    .container-list-services {    
+        padding: 0 150px 20px 150px;
+        /* background-image: url(/backgraund.jpg); */
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center, center;
+        background-size: auto 100%;
+        background-size: cover;
+    }
+
+    .list-item {
+        display: flex;
+    }
+
+
+    /* 1 столбец с заголовком */
+    .item-col-1 {
+        width: 45%; 
+        padding: 100px 30px 100px 0;   
+    }
+
+    .item-col-1 h1 {
+        color: #ffffff;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 40px;
+        font-weight: 600;
+        margin: 0 0 50px 0;
+    }
+
+    .item-col-1 span {
+        color: #4290e0;
+    }
+
+    .item-col-1 p {
+        color: #ffffff;
+        font-size: 16px;
+    }
+
+    .btn-evaluate-repairs {
+        margin-top: 50px;
+    }
+
+    .btn-evaluate-repairs button {
+        border: 2px solid #4290e0;
+        position: relative;
+        left: 0;
+        bottom: -40px;
+        padding: 10px 30px;
+        font-size: 18px;
+        font-weight: 500;
+        color: rgb(255, 255, 255);
+        background-color: rgba(0, 0, 0, 0);
+        background-image: linear-gradient(135deg, #f1d14e 50%, transparent 50%);
+        background-position: 100%;
+        background-size: 400%;
+        transition: background 400ms ease-in-out;
+    
+    }
+
+    .btn-evaluate-repairs button:hover {
+        color: rgba(0, 0, 0, 0.925);    
+        background-position: 0;    
+    }
+
+
+    /* 2 и 3 столбцы с перечнем услуг */
+    .item-col-2,
+    .item-col-3 {
+        width: 30%; 
+        padding: 100px 0;
+        color: #ffffff;    
+    }
+
+    ol {
+        list-style: none;
+    }
+
+    ol > li {
+        padding-left: 20px;
+        position: relative;
+        margin: 10px;
+        font-size: 17px;
+    }
+
+    ol > li:before {
+        content: '✓';
+        position: absolute; 
+        top: -5px; 
+        left: 0;
+        color: #4290e0;
+        font-weight: 900;
+        font-size: 20px;
+    }
+
+
+    /* стилизация h1 как фон */
+    .list-item-h1-background {
+        color: rgba(255, 255, 255, 0.027);
+        font-size: 150px;
+        font-weight: 700;
+        line-height: 0;
+        position: relative;
+        bottom: 45px;
+        left: 0;
+    }
+
+}

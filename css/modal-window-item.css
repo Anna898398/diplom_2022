@@ -1,0 +1,76 @@
+/* Модальное окно для 04-Что мы делаем?(основные услуги) */
+.modal-window-item-1,
+.modal-window-item-2,
+.modal-window-item-3,
+.modal-window-item-4,
+.modal-window-item-5 {
+	display: none;
+}
+
+.modal-window-item-1:before,
+.modal-window-item-2:before,
+.modal-window-item-3:before,
+.modal-window-item-4:before,
+.modal-window-item-5:before {
+	content: '';
+	background: #000;
+	position: fixed; 
+	left: 0;
+	top: 0;
+	width: 100%;
+	opacity: 0.7;
+	z-index: 2;
+}
+
+
+/* стили к HTML коду модального окна */
+.modal-window-content-1,
+.modal-window-content-2,
+.modal-window-content-3,
+.modal-window-content-4,
+.modal-window-content-5 {
+	position: fixed;
+	top: 0;
+	left: 200px;
+	padding: 40px;
+	width: 70%;
+	background: #fff;
+	border: none;
+	z-index: 3;
+	opacity: 1;
+}
+
+.modal-window-content-1 h1,
+.modal-window-content-2 h1,
+.modal-window-content-3 h1,
+.modal-window-content-4 h1,
+.modal-window-content-5 h1 {
+	margin-bottom: 10px;
+}
+
+.modal-window-content-1 p,
+.modal-window-content-2 p,
+.modal-window-content-3 p,
+.modal-window-content-4 p,
+.modal-window-content-5 p  {
+	font-size: 16px;
+}
+
+.btn-close-modal-window-item {
+	width: 150px;
+    border: 2px solid #292929;
+	border-radius: 0;
+	margin-left: 40px;
+    padding: 10px 0;
+    font-size: 18px;
+    font-weight: 500;
+    color: #2d2d2d;
+    background-image: linear-gradient(135deg, #4290e0 50%, transparent 50%);
+    background-position: 100%;
+    background-size: 400%;
+    transition: background 400ms ease-in-out;
+}
+
+.btn-close-modal-window-item:hover {
+    background-position: 0;    
+}

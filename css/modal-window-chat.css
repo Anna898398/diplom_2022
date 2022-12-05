@@ -1,0 +1,59 @@
+/* Модальное окно для 04-Что мы делаем?(основные услуги) */
+.modal-window-chat {
+	display: none;
+}
+
+.modal-window-chat:before {
+	content: '';
+	background: #000;
+	position: fixed; 
+	left: 0;
+	top: 0;
+	width: 100%;
+	opacity: 0.7;
+	z-index: 2;
+}
+
+
+/* стили к HTML коду модального окна */
+.modal-window-messengers {
+	position: fixed;
+	padding: 40px;
+	width: 70%;
+	background: rgba(255, 255, 255, 0);
+	border: none;
+	z-index: 3;
+	opacity: 1;
+
+	position: fixed;
+	right: 50px;
+	bottom: 40px;
+	/* z-index: 999; */
+}
+
+/* .modal-window-messengers h1 {
+	margin-bottom: 10px;
+} */
+
+/* .modal-window-messengers p {
+	font-size: 16px;
+} */
+
+.btn-close-modal-window-messengers {
+	width: 150px;
+    border: 2px solid #292929;
+	border-radius: 0;
+	margin-left: 40px;
+    padding: 10px 0;
+    font-size: 18px;
+    font-weight: 500;
+    color: #2d2d2d;
+    background-image: linear-gradient(135deg, #4290e0 50%, transparent 50%);
+    background-position: 100%;
+    background-size: 400%;
+    transition: background 400ms ease-in-out;
+}
+
+.btn-close-modal-window-messengers:hover {
+    background-position: 0;    
+}

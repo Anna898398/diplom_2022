@@ -1,0 +1,18 @@
+/* стилизация линии типа <hr> */
+.container-line {
+    display: flex;
+    margin: 0 auto;
+}
+
+.line-long {
+    width: 50px;
+    height: 3px;
+    margin-right: 3px;
+    background-color: #4290e0;
+}
+
+.line-short {
+    width: 5px;
+    margin-right: 3px;
+    background-color: #4290e0;
+}

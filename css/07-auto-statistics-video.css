@@ -1,0 +1,154 @@
+/* 07 Статистика, Видео */
+.container-statistics-and-video {
+    display: flex;
+    height: 650px;
+    align-items: center;
+    padding: 0 70px;
+}
+
+.content-box {
+    width: 65%;
+}
+
+.content-box h1 {
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    transform: scale(1, 1.1);
+}
+
+.content-box p {
+    font-size: 17px;
+    margin-bottom: 30px;
+}
+
+/* Статистика */
+.statistics-box {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    gap: 20px;
+}
+
+.statistics-box-info {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    align-items: center;
+}
+
+.statistics-box-info span {
+    color: #4290e0;
+    font-size: 55px;
+    font-weight: 700;
+    margin-right: 20px;
+}
+
+.statistics-box-info span .small-letter-k { 
+    color: #4290e0;
+    font-size: 43px;
+    font-weight: 700;
+}
+
+.statistics-box-info p {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.statistics-box-info div {
+    border-left: 3px solid #4290e0;
+    font-size: 20px;
+    font-weight: 500;
+    height: 60px;
+    padding-left: 20px;
+}
+
+/* Видео */
+.video-box {
+    background-color: antiquewhite;
+    margin-left: 70px;
+}
+
+
+
+
+
+/* __________________________________________________________________________________________________________________________ */
+
+
+
+
+
+
+@media screen and (min-width: 1601px) {
+    /* 07 Статистика, Видео */
+    .container-statistics-and-video {
+        display: flex;
+        height: 650px;
+        align-items: center;
+        padding: 0 70px 0 150px;
+    }
+
+    .content-box {
+        width: 65%;
+    }
+
+    .content-box h1 {
+        font-size: 40px;
+        font-weight: 700;
+        margin-bottom: 20px;
+        transform: scale(1, 1.1);
+    }
+
+    .content-box p {
+        font-size: 17px;
+        margin-bottom: 30px;
+    }
+
+    /* Статистика */
+    .statistics-box {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 50% 50%;
+        gap: 20px;
+    }
+
+    .statistics-box-info {
+        display: flex;
+        align-items: center;
+        overflow: hidden;
+        align-items: center;
+    }
+
+    .statistics-box-info span {
+        color: #4290e0;
+        font-size: 55px;
+        font-weight: 700;
+        margin-right: 20px;
+    }
+
+    .statistics-box-info span .small-letter-k { 
+        color: #4290e0;
+        font-size: 43px;
+        font-weight: 700;
+    }
+
+    .statistics-box-info p {
+        font-size: 20px;
+        font-weight: 700;
+    }
+
+    .statistics-box-info div {
+        border-left: 3px solid #4290e0;
+        font-size: 20px;
+        font-weight: 500;
+        height: 60px;
+        padding-left: 20px;
+    }
+
+    /* Видео */
+    .video-box {
+        background-color: antiquewhite;
+        margin-left: 70px;
+    }
+}

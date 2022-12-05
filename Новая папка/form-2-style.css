@@ -1,0 +1,64 @@
+form {
+    display: inline-block;
+}
+
+form div {
+    display: inline-block;
+    width: 100%;
+}
+
+h2 {
+    text-align: left;
+    margin-bottom: 30px;
+    margin-left: 140px;
+}
+
+#name,
+#phone,
+#email,
+#brandCar,
+#modelCar,
+#yearCar,
+#date,
+#time,
+#photo {
+    cursor: pointer;
+    width: 300px;
+    height: 20px;
+    border-radius: 3px;
+    border: rgb(173, 172, 172) solid 1.5px;
+}
+
+.checkboxYes {
+    display: flex;
+}
+
+.checkboxYes input {
+    margin: 0 25px 0 10px;
+    cursor: pointer;
+}
+
+button {
+    width: 390px;
+    height: 25px;
+    font-size: 13px;
+    border-radius: 3px;
+    border: rgb(138, 138, 138) solid 1.5px;
+    background-color: rgb(209, 208, 208);
+    cursor: pointer;
+}
+  
+form div {
+    margin-bottom: 10px;
+}
+
+.error {
+    color: red;
+    margin-left: 15px;
+}
+
+#correct {
+    color: rgb(0, 143, 12);
+    margin-left: 15px; 
+}
+
