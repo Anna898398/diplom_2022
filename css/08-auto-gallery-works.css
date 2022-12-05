@@ -76,7 +76,7 @@
 @media screen and (min-width: 1601px) {
     /* Наши работы */
     .container-gallery-our-works {
-        padding: 50px 10px 70px 25px;
+        padding: 50px 20px 70px 20px;
         /* background-image: url(icons/auto_bg-grey.jpg); */
         background-repeat: no-repeat;
         background-position: center, center;

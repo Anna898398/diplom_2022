@@ -101,7 +101,7 @@
     .container-send-form {
         background-color: #292929;
         height: 135px;
-        padding: 0 150px 0 130px;
+        padding: 0 130px 0 130px;
     }
 
     .container-send-form ul {
@@ -115,6 +115,7 @@
         align-self: center;
         position: relative;
         top: -40px;
+        width: 310px;
     }
 
     .send-form-info h1 {
@@ -137,7 +138,7 @@
     .send-form-text {
         width: 30%;
         flex-grow: 1;
-        margin: 0 50px;
+        margin: 0 40px;
         align-self: center;
         position: relative;
         top: -35px;

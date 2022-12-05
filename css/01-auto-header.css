@@ -10,9 +10,13 @@ body {
 }
 
 header {
-    width: 100%;
-    padding: 0 100px;
+    /* width: auto; */
+    /* padding: 0 100px; */
     position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 100px;
+    right: 100px;
     z-index: 1;
 }
 
@@ -206,10 +210,14 @@ header {
     }
 
     header {
-        width: 100%;
-        padding: 0 10rem;
+        /* width: 100%;
+        padding: 0 10rem; */
         position: absolute;
         z-index: 1;
+        margin-left: auto;
+        margin-right: auto;
+        left: 150px;
+        right: 150px;
     }
 
     .container-header {
