@@ -1,0 +1,43 @@
+/* body {
+    position: relative;
+} */
+
+.carousel-inner h1 {
+    color: #4290e0;
+    font-weight: 700;
+    font-size: 50px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.carousel-inner h2 {
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+    font-size: 30px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.carousel-inner h3 {
+    color: rgb(255, 255, 255);
+    font-weight: 400;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.carousel-item img {
+    width: 100%;
+}
+
+.container-fluid,
+.slide,
+.carousel-inner,
+.carousel-item {
+    margin: 0;
+    padding: 0;
+}
+
+.container-fluid {
+    width: 100%;
+    height: 100vh;
+    background-color: aqua;
+    overflow: hidden;
+}
