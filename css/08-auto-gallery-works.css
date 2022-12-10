@@ -1,7 +1,6 @@
 /* Наши работы */
 .container-gallery-our-works {
     padding: 50px 10px 70px 25px;
-    /* background-image: url(icons/auto_bg-grey.jpg); */
     background-repeat: no-repeat;
     background-position: center, center;
     background-size: auto 100%;
@@ -73,11 +72,154 @@
 
 
 
-@media screen and (min-width: 1601px) {
+@media screen and (min-width: 1651px) {
     /* Наши работы */
     .container-gallery-our-works {
         padding: 50px 20px 70px 20px;
-        /* background-image: url(icons/auto_bg-grey.jpg); */
+        background-repeat: no-repeat;
+        background-position: center, center;
+        background-size: auto 100%;
+        background-size: cover;
+    }
+
+    .container-gallery-our-works h1 {
+        text-align: center;
+        font-size: 45px;
+        font-weight: 700;
+        margin-top: 30px;
+        color: #ffffff;
+    }
+
+    .container-gallery-our-works span {
+        color: #4290e0;
+    }
+
+    .container-gallery-our-works p {
+        font-size: 17px;
+        margin-bottom: 30px;
+        text-align: center;
+        color: #ffffff;
+    }
+
+    .gallery-photo {
+        display: flex;
+        overflow: hidden;
+        margin-top: 50px;
+    }
+
+    .photo-box {
+        display: flex;
+        width: 25%;
+        height: 25vh;    
+        overflow: hidden;
+        align-items: center;
+        padding-right: 30px;  
+    }
+
+    .photo-box div {
+        overflow: hidden;
+        width: 40%;
+        font-size: 270px;
+        color: #4290e0;
+    }
+
+    .photo-box a {
+        overflow: hidden;
+        width: 100%;
+        height: 100%;  
+    }
+
+    .photo-box img {    
+        height: 100%;
+        cursor: pointer;
+    }
+}
+
+
+
+
+/* __________________________________________________________________________________________________________________________ */
+
+
+
+
+@media screen and (min-width: 991px) and (max-width: 1300px) {
+    /* Наши работы */
+    .container-gallery-our-works {
+        padding: 50px 10px 70px 25px;
+        background-repeat: no-repeat;
+        background-position: center, center;
+        background-size: auto 100%;
+        background-size: cover;
+    }
+
+    .container-gallery-our-works h1 {
+        text-align: center;
+        font-size: 45px;
+        font-weight: 700;
+        margin-top: 30px;
+        color: #ffffff;
+    }
+
+    .container-gallery-our-works span {
+        color: #4290e0;
+    }
+
+    .container-gallery-our-works p {
+        font-size: 17px;
+        margin-bottom: 30px;
+        text-align: center;
+        color: #ffffff;
+    }
+
+    .gallery-photo {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 310px 310px;
+        row-gap: 40px;
+        overflow: hidden;
+        margin-top: 50px;
+    }
+
+    .photo-box {
+        display: flex;
+        height: 100%;    
+        overflow: hidden;
+        align-items: center;
+        padding-right: 40px;  
+    }
+
+    .photo-box div {
+        overflow: hidden;
+        width: 40%;
+        font-size: 400px;
+        color: #4290e0;
+    }
+
+    .photo-box a {
+        overflow: hidden;
+        width: 100%;
+        height: 100%;  
+    }
+
+    .photo-box img {    
+        height: 100%;
+        cursor: pointer;
+    }
+}
+
+
+
+
+/* __________________________________________________________________________________________________________________________ */
+
+
+
+
+@media screen and (min-width: 991px) and (max-width: 1300px) {
+    /* Наши работы */
+    .container-gallery-our-works {
+        padding: 50px 10px 70px 25px;
         background-repeat: no-repeat;
         background-position: center, center;
         background-size: auto 100%;

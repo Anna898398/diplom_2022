@@ -3,100 +3,125 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Полировка автомобиля</title>
-
-    <!-- подключение стилевого файла фреймворка bootstrap -->
-    <link rel="stylesheet" href="bootstrap-5.1.3/css/bootstrap.min-5.css">
-    <link rel="stylesheet" href="css/slides-gallery.css">
+    <link rel="stylesheet" href="1-bootstrap-5.1.3/css/bootstrap.min-5.css">
+    <link rel="stylesheet" href="css/08-auto-link-gallery-photo.css">
+    <link rel="stylesheet" href="css/01-auto-header.css">
+    <title>Малярные работы</title>
 </head>
-<body>    
-    
+<body>
+
     <!-- 01 Header -->
-    <header>			
-        <!-- блок для логотипа -->
-        <div class="container-header-img row">
-            <img src="icons/logo-blue1.png" alt="car-brand">
-            <h1>Авто Мастер</h1>
-            <p>АВТОСЕРВИС | ШИНОМОНТАЖ</p>
+    <header>
+
+        <!-- Скрытая контактная инф. для меньшего разрешения -->
+        <div class="container-header-hide">
+            <div class="menu" id="sweeties">
+                <span class="title"></span>
+                
+                <ul>
+                    <li><i class="fa fa-calendar"></i>ПН - ВС 10:00 - 20:00</li>
+                    <li><i class="fa-solid fa-location-dot"></i>г. Рязань, ул. Баженова 36</li>
+                    <li><i class="fa-solid fa-envelope"></i>automaster@mail.ru</li>
+                    <li><i class="fa-solid fa-phone-volume"></i>+7 (4912) 00-00-00</li>
+                </ul>				
+            </div>
+
+            <button class="btn-back-hide" data-hystmodal="#myModal" id="myModal" type="button" data-toggle="modal" data-target="#exampleModalCenter">Назад</button>					
         </div>
 
+        <div class="container-header">			
 
-        <!-- строка верхняя - график работы, адрес и кнопка связи -->
-        <div class="container-header-upper row">
-            <div class="header-block-decoration"></div>
-
-            <div class="header-worktime-adress col">
-                <p>Понедельник-Воскресенье <span>10:00 - 19:00</span></p>
-                <p>г. Рязань, ул. Баженова 36</p>
+            <!-- 1) блок для логотипа -->
+            <div class="container-header-logo">
+                <img src="icons/logo.png" alt="car-brand">
             </div>
 
-            <div class="header-btn-back">
-                <a href="#containerWorks" onclick="history.back();return false;">НАЗАД</a>
-            </div>
-        </div>
 
+            <!-- 2) блок справа, сост. из 2 строк, от блока логотипа -->
+            <div class="container-header-content">
+            
+                <!-- строка верхняя - график работы, адрес и кнопка связи -->
+                <div class="header-content-row-upper">
 
-        <!-- строка средняя - текст, емэйл и номер телефона -->
-        <div class="container-header-average row">
-            <div class="header-text col">
-                <p>Для связи с нами Вы можете написать нам <a href="">automaster@mail.ru</a> или позвонить</p>							
-            </div>
-
-            <div class="header-phone">
-                <p>+7 <span>(4912)</span> 00-00-00</p>
-            </div>
-        </div>
-
-
-        <!-- строка нижняя - меню навигации -->
-        <div class="container-header-lower row"></div>
-    </header>
-
-    <!-- 02 Cлайдер фото -->
-    <div class="container-slides container-fluid" style="background-image: url(icons/backgraund.jpg);" data-spy="scroll" data-target="#navbarnav" data-offset="0">
-        <div id="section1">
-
-            <div class="offset row" id="containerSlides">                
-
-                <!-- карусель фото регулируемая -->
-                <div class="carousel slide col" id="slides" data-ride="carousel">
+                    <div class="row-upper-block-decoration"></div>
                     
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="icons/polishing-1.jpg" alt="car">
-                        </div>
+                    <div class="row-upper-worktime-adress">
+                        <p class="p-worktime">ПН - ВС <span>10:00 - 20:00</span></p>
+                        <p class="p-worktime-hide">г. Рязань, ул. Баженова 36</p>
+                    </div>
+                    
 
-                        <div class="carousel-item">
-                            <img src="icons/polishing-2.jpg" alt="car">
-                        </div>
+                    <div class="row-upper-btn">
+                        <button class="btn-back" href="#containerWorks" onclick="history.back();return false;">НАЗАД</button>                       
+                    </div>
+                    
+                </div>
 
-                        <div class="carousel-item">
-                            <img src="icons/polishing-3.jpg" alt="car">
-                        </div>
-
-                        <div class="carousel-item">
-                            <img src="icons/polishing-4.jpg" alt="car">
-                        </div>
-
-                        <div class="carousel-item">
-                            <img src="icons/polishing-5.jpg" alt="car">
-                        </div>
+                <!-- строка нижняя - текст, емэйл и номер телефон-->
+                <div class="header-content-row-lower">
+                    <div class="row-lower-text">
+                        <p>Для связи с нами Вы можете написать нам <a href="">automaster@mail.ru</a> или позвонить</p>
                     </div>
 
-                    <a class="carousel-control-prev" href="#slides" role="button" data-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Previous</span>
-                    </a>
+                    <div class="row-lower-phone">
+                        <p>+7 <span>(4912)</span> 00-00-00</p>
+                    </div>
+                </div>
 
-                    <a class="carousel-control-next" href="#slides" role="button" data-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Next</span>
-                    </a>
+            </div>
+        </div>
+    </header>
 
-                </div>   
-                
-                
-                <h1 class="col">Полировка автомобиля</h1>
+
+    <!--  -->
+    <div class="container-slides container-fluid" data-spy="scroll" data-target="#navbarnav" data-offset="0" style="background-image: url(icons/backgraund.jpg);">
+        <div id="section1">
+            <div class="offset" id="containerSlides">
+                <div class="slides-box">   
+
+                    <!-- карусель фото регулируемая -->
+                    <div class="carousel slide" id="slides" data-ride="carousel">
+                        
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="icons/polishing-1.jpg" alt="car">
+                            </div>
+
+                            <div class="carousel-item">
+                                <img src="icons/polishing-2.jpg" alt="car">
+                            </div>
+
+                            <div class="carousel-item">
+                                <img src="icons/polishing-3.jpg" alt="car">
+                            </div>
+
+                            <div class="carousel-item">
+                                <img src="icons/polishing-4.jpg" alt="car">
+                            </div>
+
+                            <div class="carousel-item">
+                                <img src="icons/polishing-5.jpg" alt="car">
+                            </div>
+                        </div>
+
+                        <a class="carousel-control-prev" href="#slides" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+
+                        <a class="carousel-control-next" href="#slides" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+
+                    <!-- текст с боку от фото -->
+                    <div class="carousel-text">                        
+                        <h1>Полировка автомобиля</h1>
+                        <p>Погодные явления ежедневно оказывают негативное воздействие на лакокрасочное покрытие кузова – появляются сколы, следы от химических веществ. Даже для нового транспортного средства характерно подвергаться воздействию внешних факторов. Решение – полировка авто специальными средствами устранит налеты, восстановит лакокрасочное покрытие, удалит мелкие царапины лака.</p>
+                    </div>
+
+                </div>
             </div>
         </div>
     </div> 
@@ -111,7 +136,7 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
 
     <!-- подключение скриптового файла фреймворка bootstrap -->
-    <script src="bootstrap-5.1.3/js/bootstrap.min-5.js"></script>
+    <script src="1-bootstrap-5.1.3/js/bootstrap.min-5.js"></script>
 
     <script>
         $('body').scrollspy({ target: '#navbarnav' })

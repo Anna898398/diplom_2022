@@ -71,22 +71,18 @@
 
 
 
-
-
 /* __________________________________________________________________________________________________________________________ */
 
 
 
-
-
-
-@media screen and (min-width: 1601px) {
+@media screen and (min-width: 991px) and (max-width: 1300px) {
+    
     /* 07 Статистика, Видео */
     .container-statistics-and-video {
         display: flex;
-        height: 650px;
+        height: 750px;
         align-items: center;
-        padding: 0 70px 0 150px;
+        padding: 0 70px;
     }
 
     .content-box {
@@ -107,10 +103,8 @@
 
     /* Статистика */
     .statistics-box {
-        display: grid;
-        grid-template-columns: 50% 50%;
-        grid-template-rows: 50% 50%;
-        gap: 20px;
+        display: flex;
+        flex-direction: column;
     }
 
     .statistics-box-info {
@@ -121,10 +115,11 @@
     }
 
     .statistics-box-info span {
+        width: 160px;
         color: #4290e0;
         font-size: 55px;
         font-weight: 700;
-        margin-right: 20px;
+        margin-right: 0;
     }
 
     .statistics-box-info span .small-letter-k { 
@@ -143,12 +138,93 @@
         font-size: 20px;
         font-weight: 500;
         height: 60px;
+        padding: 10px 0 0 20px;
+    }
+
+    /* Видео */
+    .video-box {
+        background-color: rgba(97, 87, 75, 0);
+        margin-left: 70px;
+    }
+}
+
+
+
+/* __________________________________________________________________________________________________________________________ */
+
+
+
+@media screen and (min-width: 790px) and (max-width: 990px) {
+    
+    /* 07 Статистика, Видео */
+    .container-statistics-and-video {
+        display: flex;
+        height: 800px;
+        align-items: center;
+        padding: 0 70px;
+    }
+
+    .content-box {
+        width: 65%;
+    }
+
+    .content-box h1 {
+        font-size: 40px;
+        font-weight: 700;
+        margin-bottom: 20px;
+        transform: scale(1, 1.1);
+    }
+
+    .content-box p {
+        font-size: 17px;
+        margin-bottom: 30px;
+    }
+
+    /* Статистика */
+    .statistics-box {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .statistics-box-info {
+        display: flex;
+        align-items: center;
+        overflow: hidden;
+        align-items: center;
+    }
+
+    .statistics-box-info span {
+        width: 160px;
+        color: #4290e0;
+        font-size: 55px;
+        font-weight: 700;
+        margin-right: 0;
+    }
+
+    .statistics-box-info span .small-letter-k { 
+        color: #4290e0;
+        font-size: 43px;
+        font-weight: 700;
+    }
+
+    .statistics-box-info p {
+        font-size: 20px;
+        font-weight: 700;
+        margin: auto;
+    }
+
+    .statistics-box-info div {
+        display: flex;
+        border-left: 3px solid #4290e0;
+        font-size: 20px;
+        font-weight: 500;
+        height: 80px;
         padding-left: 20px;
     }
 
     /* Видео */
     .video-box {
-        background-color: antiquewhite;
+        background-color: rgba(97, 87, 75, 0);
         margin-left: 70px;
     }
 }
