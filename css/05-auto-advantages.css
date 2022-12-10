@@ -19,13 +19,14 @@
 
 .advantages {
     display: flex;
+    margin-top: 60px;
 }
 
 .advantage-box-1,
 .advantage-box-2,
 .advantage-box-3 {
+    width: 1fr;
     display: flex;
-    margin-top: 30px;
 }
 
 .advantage-box-img {
@@ -50,11 +51,14 @@
     text-align: left;
 }
 
+.advantage-box-text div {
+    display: none;
+}
+
 .advantage-box-text p {
     font-size: 15px;
     text-align: left;
 }
-
 
 
 
@@ -64,13 +68,82 @@
 
 
 
-
-
-@media screen and (min-width: 1601px) {
-
+@media screen and (min-width: 1651px) {
     /* Раздел - наши преимущества */
     .container-advantages {
-        padding: 30px 150px 70px 150px;
+        padding: 0 70px 70px 70px;
+        color: #363636;
+    }
+
+    .container-advantages h1 {
+        text-align: center;
+        font-size: 45px;
+        font-weight: 700;
+        margin-top: 100px;
+    }
+
+    .container-advantages p {
+        font-size: 17px;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+    .advantages {
+        display: flex;
+        margin-top: 60px;
+    }
+
+    .advantage-box-1,
+    .advantage-box-2,
+    .advantage-box-3 {
+        width: 1fr;
+        display: flex;
+    }
+
+    .advantage-box-img {
+        width: 180px;
+        height: auto;
+        border-right: 3px solid #4290e0;
+        margin-right: 20px;
+        padding-right: 15px;
+        overflow: hidden;
+    }
+
+    .advantage-box-img img {
+        width: 100%;
+    }
+
+    .advantage-box-text {
+        margin: 0 20px 0 0;
+    }
+
+    .advantage-box-text h3 {
+        font-size: 30px;
+        font-weight: 700;
+        text-align: left;
+    }
+
+    .advantage-box-text div {
+        display: none;
+    }
+
+    .advantage-box-text p {
+        font-size: 17px;
+        text-align: left;
+    }
+}
+
+
+
+/* __________________________________________________________________________________________________________________________ */
+
+
+
+
+@media screen and (min-width: 991px) and (max-width: 1300px)  {
+    /* Раздел - наши преимущества */
+    .container-advantages {
+        padding: 0 70px 70px 70px;
         color: #363636;
     }
 
@@ -94,15 +167,17 @@
     .advantage-box-1,
     .advantage-box-2,
     .advantage-box-3 {
+        width: 33.3%;
         display: flex;
-        margin-top: 30px;
+        flex-direction: column;
+        margin: 30px 15px 0 15px;
     }
 
     .advantage-box-img {
-        width: 180px;
-        height: 60px;
-        border-right: 3px solid #4290e0;
-        margin-right: 20px;
+        width: 70px;
+        height: auto;
+        border-right: none;
+        margin: 0 auto 20px auto;
         padding-right: 15px;
     }
 
@@ -111,17 +186,106 @@
     }
 
     .advantage-box-text {
+        width: 100%;
         margin: 0 20px 0 0;
     }
 
     .advantage-box-text h3 {
         font-size: 22px;
         font-weight: 700;
-        text-align: left;
+        text-align: center;
+    }
+
+    .advantage-box-text div {
+        display: block;
+        width: 70px;
+        height: 3px;
+        background-color: #4290e0;
+        margin: 20px auto;
     }
 
     .advantage-box-text p {
-        font-size: 15px;
-        text-align: left;
+        font-size: 16px;
+        text-align: center;
+    }
+}
+
+
+
+
+/* __________________________________________________________________________________________________________________________ */
+
+
+
+
+@media screen and (min-width: 790px) and (max-width: 990px)  {
+
+    /* Раздел - наши преимущества */
+    .container-advantages {
+        padding: 0 70px 70px 70px;
+        color: #363636;
+    }
+
+    .container-advantages h1 {
+        text-align: center;
+        font-size: 45px;
+        font-weight: 700;
+        margin-top: 100px;
+    }
+
+    .container-advantages p {
+        font-size: 20px;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+    .advantages {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .advantage-box-1,
+    .advantage-box-2,
+    .advantage-box-3 {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin: 30px 15px 0 15px;
+    }
+
+    .advantage-box-img {
+        width: 90px;
+        height: auto;
+        border-right: none;
+        margin: 0 auto 20px auto;
+        padding-right: 15px;
+    }
+
+    .advantage-box-img img {
+        width: 100%;
+    }
+
+    .advantage-box-text {
+        width: 100%;
+        margin: 0 20px 0 0;
+    }
+
+    .advantage-box-text h3 {
+        font-size: 30px;
+        font-weight: 700;
+        text-align: center;
+    }
+
+    .advantage-box-text div {
+        display: block;
+        width: 70px;
+        height: 3px;
+        background-color: #4290e0;
+        margin: 20px auto;
+    }
+
+    .advantage-box-text p {
+        font-size: 20px;
+        text-align: center;
     }
 }

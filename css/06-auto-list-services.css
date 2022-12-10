@@ -1,7 +1,6 @@
 /* Полный перечень услуг */
 .container-list-services {    
-    padding: 0 70px 20px 70px;
-    /* background-image: url(/backgraund.jpg); */
+    padding: 100px 70px 20px 70px;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center, center;
@@ -15,35 +14,35 @@
 
 
 /* 1 столбец с заголовком */
-.item-col-1 {
+.item-box-1 {
     width: 45%; 
-    padding: 100px 30px 100px 0;   
+    padding: 0 30px 100px 0;   
 }
 
-.item-col-1 h1 {
+.item-box-1 h1 {
     color: #ffffff;
     font-family: 'Times New Roman', Times, serif;
     font-size: 40px;
     font-weight: 600;
-    margin: 0 0 40px 0;
+    margin: 0 0 20px 0;
 }
 
-.item-col-1 span {
+.item-box-1 span {
     color: #4290e0;
 }
 
-.item-col-1 p {
+.item-box-1 p {
     color: #ffffff;
     font-size: 16px;
     margin-top: 40px;
 }
 
-.item-col-1 button {
+.item-box-1 .btn-open-modal-window {
+    width: 230px;
+    height: 50px;
+    margin-top: 55px;
     border: 2px solid #4290e0;
-    position: relative;
-    left: 0;
-    bottom: -40px;
-    padding: 10px 30px;
+    padding: 10px 0;
     font-size: 18px;
     font-weight: 500;
     color: rgb(255, 255, 255);
@@ -55,32 +54,51 @@
    
 }
 
-.item-col-1 button:hover {
+.item-box-1 .btn-open-modal-window:hover {
     color: rgba(0, 0, 0, 0.925);    
     background-position: 0;    
 }
 
 
-/* 2 и 3 столбцы с перечнем услуг */
-.item-col-2,
-.item-col-3 {
-    width: 30%; 
-    padding: 100px 0;
-    color: #ffffff;    
+/* 2 столбец со списком услуг */
+.item-box-2 {
+    display: block;
+    flex-grow: 1;
 }
 
-ol {
+.item-box-2 ol {
     list-style: none;
+    width: 50%; 
+    padding: 0 0;
+    color: #ffffff; 
+    float: left; 
+    clear: both;  
 }
 
-ol > li {
+.item-box-2 ol > li {
     padding-left: 20px;
     position: relative;
     margin: 10px;
     font-size: 17px;
 }
 
-ol > li:before {
+.item-box-2 .more-li-1 {
+    margin-bottom: 0;
+}
+
+.item-box-2 .more-li-2 {
+    margin-top: 10px;
+}
+
+#more {
+    width: 50%;
+}
+
+#more ol {
+    width: 100%;
+}
+
+.item-box-2 ol > li:before {
     content: '✓';
     position: absolute; 
     top: -5px; 
@@ -88,6 +106,21 @@ ol > li:before {
     color: #4290e0;
     font-weight: 900;
     font-size: 20px;
+}
+
+#more {
+    display: flex;
+    width: auto;
+}
+
+#myReadBtn {
+    display: none;
+    color: #4290e0;
+    font-size: 17px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0);
+    position: relative;
+    z-index: 1;
 }
 
 
@@ -104,21 +137,15 @@ ol > li:before {
 
 
 
-
-
 /* __________________________________________________________________________________________________________________________ */
 
 
 
-
-
-
-@media screen and (min-width: 1601px) {
+@media screen and (min-width: 1651px) {
 
     /* Полный перечень услуг */
     .container-list-services {    
-        padding: 0 150px 20px 150px;
-        /* background-image: url(/backgraund.jpg); */
+        padding: 100px 150px 20px 150px;
         background-repeat: no-repeat;
         background-attachment: fixed;
         background-position: center, center;
@@ -132,38 +159,41 @@ ol > li:before {
 
 
     /* 1 столбец с заголовком */
-    .item-col-1 {
+    .item-box-1 {
         width: 45%; 
-        padding: 100px 30px 100px 0;   
+        padding: 0 30px 100px 0;   
     }
 
-    .item-col-1 h1 {
+    .item-box-1 h1 {
         color: #ffffff;
         font-family: 'Times New Roman', Times, serif;
         font-size: 40px;
         font-weight: 600;
-        margin: 0 0 50px 0;
+        margin: 0 0 20px 0;
     }
 
-    .item-col-1 span {
+    .item-box-1 span {
         color: #4290e0;
     }
 
-    .item-col-1 p {
+    .item-box-1 p {
         color: #ffffff;
         font-size: 16px;
+        margin-top: 40px;
     }
 
     .btn-evaluate-repairs {
-        margin-top: 50px;
+        width: 230px;
+        height: 50px;
+        margin-top: 55px;
     }
 
-    .btn-evaluate-repairs button {
+    .item-box-1 .btn-open-modal-window {
+        width: 230px;
+        height: 50px;
+        margin-top: 55px;
         border: 2px solid #4290e0;
-        position: relative;
-        left: 0;
-        bottom: -40px;
-        padding: 10px 30px;
+        padding: 10px 0;
         font-size: 18px;
         font-weight: 500;
         color: rgb(255, 255, 255);
@@ -175,32 +205,51 @@ ol > li:before {
     
     }
 
-    .btn-evaluate-repairs button:hover {
+    .item-box-1 .btn-open-modal-window:hover {
         color: rgba(0, 0, 0, 0.925);    
         background-position: 0;    
     }
 
 
-    /* 2 и 3 столбцы с перечнем услуг */
-    .item-col-2,
-    .item-col-3 {
-        width: 30%; 
-        padding: 100px 0;
-        color: #ffffff;    
+    /* 2 столбец со списком услуг */
+    .item-box-2 {
+        display: block;
+        flex-grow: 1;
     }
 
-    ol {
+    .item-box-2 ol {
         list-style: none;
+        width: 50%; 
+        padding: 0 0;
+        color: #ffffff; 
+        float: left; 
+        clear: both;  
     }
 
-    ol > li {
+    .item-box-2 ol > li {
         padding-left: 20px;
         position: relative;
         margin: 10px;
         font-size: 17px;
     }
 
-    ol > li:before {
+    .item-box-2 .more-li-1 {
+        margin-bottom: 0;
+    }
+
+    .item-box-2 .more-li-2 {
+        margin-top: 10px;
+    }
+
+    #more {
+        width: 50%;
+    }
+
+    #more ol {
+        width: 100%;
+    }
+
+    .item-box-2 ol > li:before {
         content: '✓';
         position: absolute; 
         top: -5px; 
@@ -208,6 +257,21 @@ ol > li:before {
         color: #4290e0;
         font-weight: 900;
         font-size: 20px;
+    }
+
+    #more {
+        display: flex;
+        width: auto;
+    }
+
+    #myReadBtn {
+        display: none;
+        color: #4290e0;
+        font-size: 17px;
+        border: none;
+        background-color: rgba(255, 255, 255, 0);
+        position: relative;
+        z-index: 1;
     }
 
 
@@ -222,4 +286,297 @@ ol > li:before {
         left: 0;
     }
 
+}
+
+
+
+/* __________________________________________________________________________________________________________________________ */
+
+
+
+@media screen and (min-width: 991px) and (max-width: 1301px) {
+    /* Полный перечень услуг */
+    .container-list-services {    
+        padding: 70px 70px 20px 70px;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center, center;
+        background-size: auto 100%;
+        background-size: cover;
+    }
+
+    .list-item {
+        display: flex;
+    }
+
+
+    /* 1 столбец с заголовком */
+    .item-box-1 {
+        width: 45%; 
+        padding: 0 30px 100px 0;   
+    }
+
+    .item-box-1 h1 {
+        color: #ffffff;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 40px;
+        font-weight: 600;
+        margin: 0 0 20px 0;
+    }
+
+    .item-box-1 span {
+        color: #4290e0;
+    }
+
+    .item-box-1 p {
+        color: #ffffff;
+        font-size: 16px;
+        margin-top: 40px;
+    }
+
+    .btn-evaluate-repairs {
+        width: 230px;
+        height: 50px;
+        margin-top: 55px;
+    }
+
+    .item-box-1 .btn-open-modal-window {
+        width: 230px;
+        height: 50px;
+        margin-top: 55px;
+        border: 2px solid #4290e0;
+        padding: 10px 0;
+        font-size: 18px;
+        font-weight: 500;
+        color: rgb(255, 255, 255);
+        background-color: rgba(0, 0, 0, 0);
+        background-image: linear-gradient(135deg, #f1d14e 50%, transparent 50%);
+        background-position: 100%;
+        background-size: 400%;
+        transition: background 400ms ease-in-out;
+    
+    }
+
+    .item-box-1 .btn-open-modal-window:hover {
+        color: rgba(0, 0, 0, 0.925);    
+        background-position: 0;    
+    }
+
+
+    /* 2 столбец со списком услуг */
+    .item-box-2 {
+        display: block;
+        flex-grow: 1;
+    }
+
+    .item-box-2 ol {
+        list-style: none;
+        width: 50%; 
+        padding: 0 0;
+        color: #ffffff; 
+        float: left; 
+        clear: both;  
+    }
+
+    .item-box-2 ol > li {
+        padding-left: 20px;
+        position: relative;
+        margin: 10px;
+        font-size: 17px;
+    }
+
+    .item-box-2 .more-li-1 {
+        margin-bottom: 0;
+    }
+
+    .item-box-2 .more-li-2 {
+        margin-top: 10px;
+    }
+
+    #more {
+        width: 50%;
+    }
+
+    #more ol {
+        width: 100%;
+    }
+
+    .item-box-2 ol > li:before {
+        content: '✓';
+        position: absolute; 
+        top: -5px; 
+        left: 0;
+        color: #4290e0;
+        font-weight: 900;
+        font-size: 20px;
+    }
+
+    #more {
+        display: flex;
+        width: auto;
+    }
+
+    #myReadBtn {
+        display: none;
+        color: #4290e0;
+        font-size: 17px;
+        border: none;
+        background-color: rgba(255, 255, 255, 0);
+        position: relative;
+        z-index: 1;
+    }
+
+
+    /* стилизация h1 как фон */
+    .list-item-h1-background {
+        color: rgba(255, 255, 255, 0.027);
+        font-size: 130px;
+        font-weight: 700;
+        line-height: 0;
+        position: relative;
+        bottom: 35px;
+        left: 0;
+    }
+}
+
+
+
+/* __________________________________________________________________________________________________________________________ */
+
+
+
+@media screen and (min-width: 790px) and (max-width: 990px) {
+    /* Полный перечень услуг */
+    .container-list-services {    
+        padding: 70px 70px 20px 70px;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center, center;
+        background-size: auto 100%;
+        background-size: cover;
+    }
+
+    .list-item {
+        display: flex;
+    }
+
+
+    /* 1 столбец с заголовком */
+    .item-box-1 {
+        width: 50%; 
+        padding: 0 50px 100px 0;   
+    }
+
+    .item-box-1 h1 {
+        color: #ffffff;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 40px;
+        font-weight: 600;
+        margin: 0 0 40px 0;
+    }
+
+    .item-box-1 span {
+        color: #4290e0;
+    }
+
+    .item-box-1 p {
+        color: #ffffff;
+        font-size: 16px;
+        margin-top: 40px;
+    }
+
+    .item-box-1 .btn-open-modal-window {
+        width: 230px;
+        height: 50px;
+        margin-top: 0;
+        border: 2px solid #4290e0;
+        padding: 10px 0;
+        font-size: 15px;
+        font-weight: 500;
+        color: rgb(255, 255, 255);
+        background-color: rgba(0, 0, 0, 0);
+        background-image: linear-gradient(135deg, #f1d14e 50%, transparent 50%);
+        background-position: 100%;
+        background-size: 400%;
+        transition: background 400ms ease-in-out;
+       
+    }
+    
+    .item-box-1 .btn-open-modal-window:hover {
+        color: rgba(0, 0, 0, 0.925);    
+        background-position: 0;    
+    }
+
+
+    /* 2 столбец со списком услуг */
+    .item-box-2 {
+        display: block;
+        width: 50%; 
+    }
+
+    .item-box-2 ol {
+        list-style: none;
+        width: 100%; 
+        padding: 0 0;
+        color: #ffffff; 
+        float: left; 
+        clear: both;  
+    }
+
+    .item-box-2 ol > li {
+        padding-left: 20px;
+        position: relative;
+        margin: 10px;
+        font-size: 17px;
+    }
+
+    .item-box-2 .more-li-1 {
+        margin-bottom: 0;
+    }
+
+    .item-box-2 .more-li-2 {
+        margin-top: 0;
+    }
+
+    .item-box-2 ol > li:before {
+        content: '✓';
+        position: absolute; 
+        top: -5px; 
+        left: 0;
+        color: #4290e0;
+        font-weight: 900;
+        font-size: 20px;
+    }
+
+    #more {
+        display: none;
+        width: 100%;
+    }
+
+    #more ol {
+        width: 100%;
+    }
+
+    #myReadBtn {
+        display: block;
+        color: #4290e0;
+        font-size: 17px;
+        border: none;
+        background-color: rgba(255, 255, 255, 0);
+        position: relative;
+        z-index: 1;
+        margin-top: 20px;
+    }
+
+
+    /* стилизация h1 как фон */
+    .list-item-h1-background {
+        color: rgba(255, 255, 255, 0.027);
+        font-size: 130px;
+        font-weight: 700;
+        line-height: 0;
+        position: relative;
+        bottom: 40px;
+        left: 0;
+    }
 }

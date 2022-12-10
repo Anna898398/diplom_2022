@@ -1,21 +1,24 @@
 /* Заказать звонок */
 .container-send-form {
     background-color: #292929;
+    width: 100%;
     height: 135px;
     padding: 0 70px;
 }
 
 .container-send-form ul {
     display: flex;
+    width: 100%;
+    height: 100%;
     list-style: none;
+    padding: 0;
 }
 
 
-/* li info Закзать звонок, Форма связи */
+/* li info "Закзать звонок, Форма связи" */
 .send-form-info {
     align-self: center;
-    position: relative;
-    top: -35px;
+    width: 350px;
 }
 
 .send-form-info h1 {
@@ -34,11 +37,9 @@
 
 /* li text описание */
 .send-form-text {
-    width: 30%;
-    margin: 0 0 0 50px;
     align-self: center;
-    position: relative;
-    top: -30px;
+    margin-left: 35px;
+    flex-grow: 1;
 }
 
 .send-form-text p {
@@ -50,24 +51,29 @@
 
 /* li banner картинка-баннер ключ авто */
 .send-form-banner {
-    width: 200px;
+    width: 270px;    
     align-self: center;
+    margin: 0 90px 0 15px;
 }
 
 .send-form-banner img {
     width: 150%;
     position: relative;
-    top: -30px;
+    top: 5px;
+}
+
+.send-form-btn {
+    width: 260px;
+    align-self: center;
 }
 
 
 /* li btn кнопка Оценить ремонт */
-.send-form-btn button {
+.send-form-btn .btn-open-modal-window {
+    width: 100%;
+    height: 50px;
     border: 2px solid #4290e0;
-    position: relative;
-    left: 100px;
-    bottom: -40px;
-    padding: 10px 30px;
+    padding: 0;
     font-size: 18px;
     font-weight: 500;
     color: rgb(255, 255, 255);
@@ -75,15 +81,13 @@
     background-image: linear-gradient(135deg, #f1d14e 50%, transparent 50%);
     background-position: 100%;
     background-size: 400%;
-    transition: background 300ms ease-in-out;
-   
+    transition: background 300ms ease-in-out;   
 }
 
-.send-form-btn button:hover {
+.send-form-btn .btn-open-modal-window:hover {
     color: rgba(0, 0, 0, 0.925);    
     background-position: 0;
 }
-
 
 
 
@@ -93,35 +97,33 @@
 
 
 
+@media screen and (min-width: 1651px) {
 
-
-@media screen and (min-width: 1601px) {
-
-    /* Заказать звонок */
+        /* Заказать звонок */
     .container-send-form {
         background-color: #292929;
+        width: 100%;
         height: 135px;
-        padding: 0 130px 0 130px;
+        padding: 0 150px;
     }
 
     .container-send-form ul {
         display: flex;
+        width: 100%;
+        height: 100%;
         list-style: none;
+        padding: 0;
     }
 
 
-    /* li info Закзать звонок, Форма связи */
+    /* li info "Закзать звонок, Форма связи" */
     .send-form-info {
         align-self: center;
-        position: relative;
-        top: -40px;
-        width: 310px;
+        width: 350px;
     }
 
     .send-form-info h1 {
         line-height: 30px;
-        font-size: 30px;
-        font-weight: 600;
     }
 
     .info-text-white {
@@ -136,45 +138,43 @@
 
     /* li text описание */
     .send-form-text {
-        width: 30%;
-        flex-grow: 1;
-        margin: 0 40px;
         align-self: center;
-        position: relative;
-        top: -35px;
+        margin-left: 35px;
+        flex-grow: 1;
     }
 
     .send-form-text p {
         color: rgb(255, 255, 255);
         font-size: 17px;
-        line-height: 25px;
+        line-height: 35px;
     }
 
 
     /* li banner картинка-баннер ключ авто */
     .send-form-banner {
-        width: 220px;
+        width: 270px;    
         align-self: center;
+        margin: 0 90px 0 15px;
     }
 
     .send-form-banner img {
         width: 150%;
         position: relative;
-        top: -30px;
+        top: 5px;
+    }
+
+    .send-form-btn {
+        width: 260px;
+        align-self: center;
     }
 
 
     /* li btn кнопка Оценить ремонт */
-    .send-form-btn {
-        width: 400px;
-    }
-
-    .send-form-btn button {
+    .send-form-btn .btn-open-modal-window {
+        width: 100%;
+        height: 60px;
         border: 2px solid #4290e0;
-        position: relative;
-        bottom: -40px;
-        left: 210px;
-        padding: 10px 30px;
+        padding: 0;
         font-size: 18px;
         font-weight: 500;
         color: rgb(255, 255, 255);
@@ -182,10 +182,215 @@
         background-image: linear-gradient(135deg, #f1d14e 50%, transparent 50%);
         background-position: 100%;
         background-size: 400%;
-        transition: background 300ms ease-in-out;   
+        transition: background 300ms ease-in-out;
+    
     }
 
-    .send-form-btn button:hover {
+    .send-form-btn .btn-open-modal-window:hover {
+        color: rgba(0, 0, 0, 0.925);    
+        background-position: 0;
+    }
+}
+
+
+
+
+
+/* __________________________________________________________________________________________________________________________ */
+
+
+
+
+
+
+@media screen and (min-width: 991px) and (min-width: 1300px) {
+    /* Заказать звонок */
+    .container-send-form {
+        background-color: #292929;
+        width: 100%;
+        height: 135px;
+        padding: 0 70px;
+    }
+
+    .container-send-form ul {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        list-style: none;
+        padding: 0;
+    }
+
+
+    /* li info "Закзать звонок, Форма связи" */
+    .send-form-info {
+        align-self: center;
+        width: 350px;
+    }
+
+    .send-form-info h1 {
+        line-height: 30px;
+    }
+
+    .info-text-white {
+        color: rgb(255, 255, 255);
+    }
+
+    .info-text-blue {
+        color: #4290e0;
+        margin-left: 70px;
+    }
+
+
+    /* li text описание */
+    .send-form-text {
+        /* width: auto; */
+        align-self: center;
+        margin-left: 35px;
+        flex-grow: 1;
+    }
+
+    .send-form-text p {
+        color: rgb(255, 255, 255);
+        font-size: 15px;
+        line-height: 25px;
+    }
+
+
+    /* li banner картинка-баннер ключ авто */
+    .send-form-banner {
+        width: 270px;    
+        align-self: center;
+        margin: 0 90px 0 15px;
+    }
+
+    .send-form-banner img {
+        width: 150%;
+        position: relative;
+        top: 5px;
+    }
+
+    .send-form-btn {
+        width: 260px;
+        align-self: center;
+    }
+
+
+    /* li btn кнопка Оценить ремонт */
+    .send-form-btn .btn-open-modal-window {
+        width: 100%;
+        height: 50px;
+        border: 2px solid #4290e0;
+        padding: 0;
+        font-size: 18px;
+        font-weight: 500;
+        color: rgb(255, 255, 255);
+        background-color: rgba(0, 0, 0, 0);
+        background-image: linear-gradient(135deg, #f1d14e 50%, transparent 50%);
+        background-position: 100%;
+        background-size: 400%;
+        transition: background 300ms ease-in-out;
+    
+    }
+
+    .send-form-btn .btn-open-modal-window:hover {
+        color: rgba(0, 0, 0, 0.925);    
+        background-position: 0;
+    }
+
+
+}
+
+@media screen and (min-width: 790px) and (min-width: 990px) {
+
+    /* Заказать звонок */
+    .container-send-form {
+        background-color: #292929;
+        width: 100%;
+        height: 135px;
+        padding: 0 70px;
+    }
+
+    .container-send-form ul {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        list-style: none;
+        padding: 0;
+    }
+
+
+    /* li info "Закзать звонок, Форма связи" */
+    .send-form-info {
+        align-self: center;
+        width: 350px;
+    }
+
+    .send-form-info h1 {
+        line-height: 30px;
+    }
+
+    .info-text-white {
+        color: rgb(255, 255, 255);
+    }
+
+    .info-text-blue {
+        color: #4290e0;
+        margin-left: 70px;
+    }
+
+
+    /* li text описание */
+    .send-form-text {
+        /* width: auto; */
+        align-self: center;
+        margin-left: 35px;
+        flex-grow: 1;
+    }
+
+    .send-form-text p {
+        color: rgb(255, 255, 255);
+        font-size: 15px;
+        line-height: 25px;
+    }
+
+
+    /* li banner картинка-баннер ключ авто */
+    .send-form-banner {
+        width: 270px;    
+        align-self: center;
+        margin: 0 90px 0 15px;
+    }
+
+    .send-form-banner img {
+        width: 150%;
+        position: relative;
+        top: 5px;
+    }
+
+    .send-form-btn {
+        width: 260px;
+        align-self: center;
+    }
+
+
+    /* li btn кнопка Оценить ремонт */
+    .send-form-btn .btn-open-modal-window {
+        width: 100%;
+        height: 50px;
+        border: 2px solid #4290e0;
+        padding: 0;
+        font-size: 18px;
+        font-weight: 500;
+        color: rgb(255, 255, 255);
+        background-color: rgba(0, 0, 0, 0);
+        background-image: linear-gradient(135deg, #f1d14e 50%, transparent 50%);
+        background-position: 100%;
+        background-size: 400%;
+        transition: background 300ms ease-in-out;
+    
+    }
+
+    .send-form-btn .btn-open-modal-window:hover {
         color: rgba(0, 0, 0, 0.925);    
         background-position: 0;
     }

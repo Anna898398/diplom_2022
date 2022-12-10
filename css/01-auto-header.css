@@ -5,8 +5,8 @@
 body {
     font-family: 'Poppins', sans-serif;
     color: #292929;
-    min-width: 1651px;
-    max-width: 2500px;
+    min-width: 1301px;
+    max-width: 1650px;
 }
 
 header {
@@ -14,22 +14,26 @@ header {
     z-index: 1;
     margin-left: auto;
     margin-right: auto;
-    left: 150px;
-    right: 150px;
+    left: 100px;
+    right: 100px;
 }
 
 .container-header {
     display: flex;
     justify-content: space-between;
     width: 100%;
-    height: 140px;
+    height: 120px;
+}
+
+.container-header-hide {
+    display: none;
 }
 
 
 /* 1) блок для логотипа */
 .container-header-logo {
     background-color: #2d2d2d;;
-    width: 400px;
+    width: 350px;
     height: 100%;
     padding: 25px 40px 35px 30px;
     background: linear-gradient(-125deg, transparent 35px, #2d2d2d 0);
@@ -74,12 +78,9 @@ header {
 
 .row-upper-worktime-adress p {
     color: #ffffff;
-    font-size: 20px;
+    font-size: 15px;
     font-weight: 500;
-    transform: scale(1.2, 1.2); 
-    /* position: relative;
-    top: 25px;
-    left: 30px; */
+    transform: scale(1.2, 1.2);
 }
 
 .row-upper-worktime-adress span {
@@ -89,11 +90,11 @@ header {
 }
 
 .row-upper-worktime-adress .p-worktime {
-    margin-right: 120px;
+    margin-right: 80px;
 }
 
 .row-upper-btn {
-    width: 320px;
+    width: 270px;
     padding-left: 25px;
     background: linear-gradient(55deg, transparent 40px, #4290e0 0);
     border: none;
@@ -103,21 +104,26 @@ header {
     color: #29292986;    
 }
 
-.row-upper-btn button {
+.btn-open-modal-window {
     width: 100%;
     height: 100%;
     height: 100%;
-    font-size: 25px;
+    font-size: 22px;
     font-weight: 600;
     border: none;
     background: linear-gradient(55deg, transparent 40px, #4290e0 0);
     color: #272725;
 }
 
-.row-upper-btn button:hover {
+.btn-open-modal-window:hover {
     color: #292929d0;
 }
 
+/* бургер-меню */
+.btn-open-menu-burger,
+.menu-burger-hide {
+    display: none;
+}
 
 /* строка нижняя - текст, емэйл и номер телефона */
 .header-content-row-lower {
@@ -135,7 +141,7 @@ header {
     display: flex;
     align-items: center;
     padding: 15px 10px 0 0;
-    font-size: 18px;
+    font-size: 14px;
     flex-grow: 1;
 }
 
@@ -145,9 +151,9 @@ header {
 }
 
 .row-lower-phone {
-    padding: 15px 35px 0 0;
-    width: 250px;
-    font-size: 30px;
+    padding: 10px 25px 0 0;
+    width: 245px;
+    font-size: 25px;
     font-weight: 600;
     text-align: right;
 }
@@ -163,7 +169,7 @@ header {
     grid-column: 1 / span 3;
     grid-row: 1 / span 0;
     width: 100%;
-    height: 70px;
+    height: 60px;
     padding: 0 20px;
 }
 
@@ -188,7 +194,7 @@ header {
 .container-header-nav-menu nav .link a {
     text-decoration: none;
     color: #292929;
-    font-size: 18px;
+    font-size: 14px;
     font-weight: 600;
 }
 
@@ -198,65 +204,69 @@ header {
 
 
 
-@media screen and (min-width: 1301px) and (max-width: 1650px) {
-    
+@media screen and (min-width: 1651px) {
+        
     * {
         box-sizing: border-box;
     }
-    
+
     body {
         font-family: 'Poppins', sans-serif;
         color: #292929;
-        min-width: 1301px;
-        max-width: 1650px;
+        min-width: 1651px;
+        max-width: 2500px;
     }
-    
+
     header {
         position: absolute;
         z-index: 1;
         margin-left: auto;
         margin-right: auto;
-        left: 100px;
-        right: 100px;
+        left: 150px;
+        right: 150px;
     }
-    
+
     .container-header {
         display: flex;
         justify-content: space-between;
         width: 100%;
         height: 140px;
     }
-    
-    
+
+    .container-header-hide {
+        display: none;
+    }
+
+
     /* 1) блок для логотипа */
     .container-header-logo {
         background-color: #2d2d2d;;
-        width: 350px;
+        width: 400px;
         height: 100%;
         padding: 25px 40px 35px 30px;
         background: linear-gradient(-125deg, transparent 35px, #2d2d2d 0);
         overflow: hidden;
     }
-    
+
     .container-header-logo img {
         width: 100%;
     }
-    
-    
+
+
     /* блок справа, сост. из 2 строк, от блока логотипа */
     .container-header-content {
         width: 100%;
         height: 100%;
     }
-    
-    
+
+
     /* строка верхняя - график работы, адрес и кнопка связи */
     .header-content-row-upper {
         display: flex;
         width: 100%;
         height: 50%;
     }
-    
+
     .row-upper-block-decoration {
         width: 17px;
         height: 100%;
@@ -265,7 +275,7 @@ header {
         position: relative;
         left: -38px;
     }
-    
+
     .row-upper-worktime-adress {
         display: flex;
         padding: 20px 15px;
@@ -273,51 +283,57 @@ header {
         text-align: left; 
         flex-grow: 1;
     }
-    
+
     .row-upper-worktime-adress p {
         color: #ffffff;
-        font-size: 15px;
+        font-size: 20px;
         font-weight: 500;
         transform: scale(1.2, 1.2);
     }
-    
+
     .row-upper-worktime-adress span {
         color: #4290e0;
         margin-left: 20px;
         font-weight: 600;
     }
-    
+
     .row-upper-worktime-adress .p-worktime {
-        margin-right: 80px;
+        margin-right: 120px;
     }
-    
+
     .row-upper-btn {
-        width: 270px;
+        width: 320px;
         padding-left: 25px;
         background: linear-gradient(55deg, transparent 40px, #4290e0 0);
         border: none;
     }
-    
+
     .row-upper-btn:hover {
         color: #29292986;    
     }
-    
-    .row-upper-btn button {
+
+    .btn-open-modal-window {
         width: 100%;
         height: 100%;
         height: 100%;
-        font-size: 22px;
+        font-size: 25px;
         font-weight: 600;
         border: none;
         background: linear-gradient(55deg, transparent 40px, #4290e0 0);
         color: #272725;
     }
-    
-    .row-upper-btn button:hover {
+
+    .btn-open-modal-window:hover {
         color: #292929d0;
     }
-    
-    
+
+    /* бургер-меню */
+    .btn-open-menu-burger,
+    .menu-burger-hide {
+        display: none;
+    }
+
+
     /* строка нижняя - текст, емэйл и номер телефона */
     .header-content-row-lower {
         display: flex;
@@ -329,33 +345,33 @@ header {
         z-index: 1;
         color: #ffffff;
     }
-    
+
     .row-lower-text {
         display: flex;
         align-items: center;
         padding: 15px 10px 0 0;
-        font-size: 14px;
+        font-size: 18px;
         flex-grow: 1;
     }
-    
+
     .row-lower-text a {
         color: #4290e0;
         margin: 0 10px;
     }
-    
+
     .row-lower-phone {
-        padding: 10px 25px 0 0;
-        width: 245px;
-        font-size: 25px;
+        padding: 15px 35px 0 0;
+        width: 300px;
+        font-size: 30px;
         font-weight: 600;
         text-align: right;
     }
-    
+
     .row-lower-phone span {
         color: #4290e0;
     }
-    
-    
+
+
     /* меню навигации */
     .container-header-nav-menu {    
         background-color: rgb(255, 255, 255);
@@ -365,36 +381,38 @@ header {
         height: 70px;
         padding: 0 20px;
     }
-    
+
     .container-header-nav-menu nav {    
         display: flex;
         height: 100%;
     }
-    
+
     .container-header-nav-menu nav .link {
         height: 100%;
         padding: 15px 10px 0 10px;
     }
-    
+
     .container-header-nav-menu nav .link:hover {
         border-bottom: 4px #4290e0 solid;
     }
-    
+
     .container-header-nav-menu nav .active-link {
         border-bottom: 4px #4290e0 solid;
     }
-    
+
     .container-header-nav-menu nav .link a {
         text-decoration: none;
         color: #292929;
-        font-size: 14px;
+        font-size: 18px;
         font-weight: 600;
     }
 }
 
 
 
+
 /* __________________________________________________________________________________________________________________________ */
+
 
 
 
@@ -424,7 +442,11 @@ header {
         display: flex;
         justify-content: space-between;
         width: 100%;
-        height: 140px;
+        height: 110px;
+    }
+
+    .container-header-hide {
+        display: none;
     }
     
     
@@ -433,7 +455,7 @@ header {
         background-color: #2d2d2d;
         width: 450px;
         height: 100%;
-        padding: 25px 40px 35px 30px;
+        padding: 15px 40px 0 30px;
         background: #2d2d2d;
         overflow: hidden;
     }
@@ -470,8 +492,8 @@ header {
     
     .row-upper-worktime-adress {
         display: block;
-        padding: 20px 35px;
-        line-height: 50px;
+        padding: 10px 35px;
+        line-height: 40px;
         height: 100%;
         text-align: left; 
         flex-grow: 1;
@@ -505,7 +527,7 @@ header {
         color: #29292986;    
     }
     
-    .row-upper-btn button {
+    .btn-open-modal-window {
         width: 100%;
         height: 100%;
         height: 100%;
@@ -516,10 +538,16 @@ header {
         color: #272725;
     }
     
-    .row-upper-btn button:hover {
+    .btn-open-modal-window:hover {
         color: #292929d0;
     }
-    
+
+    /* бургер-меню */
+    .btn-open-menu-burger,
+    .menu-burger-hide {
+        display: none;
+    }
+        
     
     /* строка нижняя - текст, емэйл и номер телефона */
     .header-content-row-lower {
@@ -551,9 +579,9 @@ header {
     }
     
     .row-lower-phone {
-        padding: 15px 35px 0 0;
+        padding: 10px 35px 0 0;
         width: 470px;
-        font-size: 30px;
+        font-size: 26px;
         font-weight: 600;
         text-align: right;
     }
@@ -569,7 +597,7 @@ header {
         grid-column: 1 / span 3;
         grid-row: 1 / span 0;
         width: 100%;
-        height: 70px;
+        height: 55px;
         padding: 0 15px;
     }
     
@@ -580,7 +608,7 @@ header {
     
     .container-header-nav-menu nav .link {
         height: 100%;
-        padding: 20px 3px 0 3px;
+        padding: 13px 3px 0 3px;
     }
     
     .container-header-nav-menu nav .link:hover {
@@ -605,7 +633,7 @@ header {
 
 
 
-@media screen and (min-width: 791px) and (max-width: 990px) {
+@media screen and (min-width: 250px) and (max-width: 990px) {
     
     * {
         box-sizing: border-box;
@@ -614,7 +642,7 @@ header {
     body {
         font-family: 'Poppins', sans-serif;
         color: #292929;
-        min-width: 791px;
+        min-width: 250px;
         max-width: 990px;
     }
     
@@ -623,24 +651,97 @@ header {
         z-index: 1;
         margin-left: auto;
         margin-right: auto;
-        left: 20px;
-        right: 20px;
+        left: 0;
+        right: 0;
     }
     
     .container-header {
         display: flex;
         justify-content: space-between;
         width: 100%;
-        height: 140px;
+        height: 80px;
+    }
+
+
+    /* Скрытая контактная информация */
+    .container-header-hide {
+        display: flex;
+        width: 100%;
+        background-color: #0e0e0e;
+        height: 50px;
+    }
+
+    .menu {
+        display: block;
+        flex-grow: 1;
+        padding: 5px 0 0 20px;
+    }
+    
+    .menu ul {
+        position: relative;
+        top: 0px;
+        left: -20px;
+        list-style: none;
+        display: none;
+        background-color: #2d2d2d;
+        padding: 20px;
+    }
+
+    .menu .title {
+        font-size: 30px;
+        cursor: pointer;
+    }
+
+    .menu .title::before {
+        content: '⮟';
+        font-size: 30px;
+        color: #4290e0;
+    }
+
+    .menu.open .title::before {
+        content: '⮝';
+    }
+
+    .menu.open ul {
+        display: block;
+        width: 300px;
+        border: #0e0e0e solid 1px;
+        border-top: none;
+    }
+
+    .menu li {
+        color: #ffffff;
+        font-size: 17px;
+        margin-bottom: 20px;
+    }
+
+    .menu li i {
+        margin-right: 20px;
+    }
+
+    .btn-open-modal-window-hide {
+        display: flex;
+        width: 330px;
+        height: 100%;
+        font-size: 22px;
+        font-weight: 600;
+        border: none;
+        background: linear-gradient(45deg, transparent 50px, #4290e0 0);
+        color: #272725;
+        padding: 10px 0 0 95px;
+    }
+    
+    .btn-open-modal-window-hide:hover {
+        color: #292929d0;
     }
     
     
     /* 1) блок для логотипа */
     .container-header-logo {
         background-color: #2d2d2d;
-        width: 450px;
+        width: 330px;
         height: 100%;
-        padding: 25px 40px 35px 30px;
+        padding: 10px 30px;
         background: #2d2d2d;
         overflow: hidden;
     }
@@ -650,7 +751,7 @@ header {
     }
     
     
-    /* блок справа, сост. из 2 строк, от блока логотипа */
+    /* 2) блок справа, сост. из 2 строк, от блока логотипа */
     .container-header-content {
         width: 100%;
         height: 100%;
@@ -661,7 +762,7 @@ header {
     .header-content-row-upper {
         display: flex;
         width: 100%;
-        height: 50%;
+        height: 100%;
         background-color: #2d2d2d;
     }
     
@@ -676,18 +777,18 @@ header {
     }
     
     .row-upper-worktime-adress {
-        display: block;
+        display: none;
         padding: 20px 35px;
-        line-height: 50px;
+        line-height: 20px;
         height: 100%;
-        text-align: left; 
-        flex-grow: 1;
+        text-align: left;
     }
     
     .row-upper-worktime-adress p {
         color: #ffffff;
-        font-size: 15px;
+        font-size: 20px;
         font-weight: 500;
+        margin: auto 20px;
         transform: scale(1.2, 1.2);
     }
     
@@ -700,37 +801,74 @@ header {
     .row-upper-worktime-adress .p-worktime {
         margin-right: 0;
     }
+
+    .row-upper-worktime-adress .p-worktime-hide {
+        display: none;
+    }
     
     .row-upper-btn {
-        width: 320px;
+        display: flex;
+        width: auto;
         padding-left: 25px;
-        background: linear-gradient(55deg, transparent 40px, #4290e0 0);
-        border: none;
+        background: #2d2d2d;
+        border: none; 
+        flex-grow: 1;
+        justify-content: end;
     }
     
     .row-upper-btn:hover {
         color: #29292986;    
     }
     
-    .row-upper-btn button {
-        width: 100%;
-        height: 100%;
+    .btn-open-modal-window {
+        display: none;
+        width: 290px;
         height: 100%;
         font-size: 25px;
         font-weight: 600;
         border: none;
-        background: linear-gradient(55deg, transparent 40px, #4290e0 0);
+        background: linear-gradient(45deg, transparent 50px, #4290e0 0);
         color: #272725;
     }
     
-    .row-upper-btn button:hover {
+    .btn-open-modal-window:hover {
         color: #292929d0;
+    }
+
+
+    /* бургер-меню */
+    .menu-burger-hide {
+        display: none;
+        position: absolute;
+        z-index: 9000;
+        background-color: #2d2d2d;
+        cursor: pointer;
+        padding: 20px 20px 20px 10px;
+        top: 130px;
+        right: 0;
+    }
+
+    .menu-burger-hide a {
+        text-decoration: none;
+        color: #ffffff;
+        font-size: 17px;
+    }
+      
+    .btn-open-menu-burger {
+        display: block;
+        cursor: pointer;
+        border: none;
+        font-size: 45px;
+        padding: 0 40px 0 0;
+        background-color: #2d2d2d;
+        color: #ffffff;
+       float: right;
     }
     
     
     /* строка нижняя - текст, емэйл и номер телефона */
     .header-content-row-lower {
-        display: flex;
+        display: none;
         background-color: #2d2d2d;
         grid-column: 2 / span 2;
         grid-row: 2 / span 1;
@@ -771,7 +909,8 @@ header {
     
     
     /* меню навигации */
-    .container-header-nav-menu {    
+    .container-header-nav-menu {  
+        display: none;  
         background-color: rgb(255, 255, 255);
         grid-column: 1 / span 3;
         grid-row: 1 / span 0;
@@ -805,7 +944,4 @@ header {
         font-weight: 600;
     }
 }
-
-
-
 
