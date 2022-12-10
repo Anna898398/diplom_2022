@@ -15,7 +15,7 @@
 
 /* 1 столбец с заголовком */
 .item-box-1 {
-    width: 45%; 
+    width: 40%; 
     padding: 0 30px 100px 0;   
 }
 
@@ -62,7 +62,8 @@
 
 /* 2 столбец со списком услуг */
 .item-box-2 {
-    display: block;
+    width: 55%;
+    display: flex;
     flex-grow: 1;
 }
 
@@ -160,7 +161,7 @@
 
     /* 1 столбец с заголовком */
     .item-box-1 {
-        width: 45%; 
+        width: 40%; 
         padding: 0 30px 100px 0;   
     }
 
@@ -213,7 +214,8 @@
 
     /* 2 столбец со списком услуг */
     .item-box-2 {
-        display: block;
+        width: 55%;
+        display: flex;
         flex-grow: 1;
     }
 
@@ -312,7 +314,7 @@
 
     /* 1 столбец с заголовком */
     .item-box-1 {
-        width: 45%; 
+        width: 40%; 
         padding: 0 30px 100px 0;   
     }
 
@@ -365,7 +367,8 @@
 
     /* 2 столбец со списком услуг */
     .item-box-2 {
-        display: block;
+        width: 55%;
+        display: flex;
         flex-grow: 1;
     }
 
@@ -373,9 +376,7 @@
         list-style: none;
         width: 50%; 
         padding: 0 0;
-        color: #ffffff; 
-        float: left; 
-        clear: both;  
+        color: #ffffff;
     }
 
     .item-box-2 ol > li {
