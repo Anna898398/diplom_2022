@@ -1,13 +1,13 @@
 $(document).ready(function($) {
     
-    $('.btn-open-modal-window-messengers').click(function() {
+    $('.btn-open-modal-window-chat').click(function() {
         $('.modal-window-chat').fadeIn();
         return false;
     });
 	
 
 
-    $('.btn-close-modal-window-messengers').click(function() {
+    $('.btn-close-modal-window-chat').click(function() {
         $(this).parents('.modal-window-chat').fadeOut();
         return false;
     });		

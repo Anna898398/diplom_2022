@@ -1,7 +1,6 @@
 /* Раздел - наши преимущества */
 .container-advantages {
     padding: 0 70px 70px 70px;
-    color: #363636;
 }
 
 .container-advantages h1 {
@@ -9,6 +8,8 @@
     font-size: 45px;
     font-weight: 700;
     margin-top: 100px;
+    color: #333333;
+    font-family: 'Poppins', sans-serif;
 }
 
 .container-advantages p {

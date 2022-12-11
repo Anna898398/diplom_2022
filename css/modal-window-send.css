@@ -3,7 +3,7 @@
 	display: none;
 }
 
-/* .modal-window-form-send:before {
+.modal-window-form-send:before {
 	content: '';
 	background: #000;
 	position: fixed; 
@@ -12,7 +12,7 @@
 	width: 100%;
 	opacity: 0.7;
 	z-index: 2;
-} */
+}
 
 
 /* стили к HTML коду модального окна */
@@ -106,3 +106,10 @@
 	top: 10px;
 	right: 10px;
 } */
+
+
+@media screen and (min-width: 991px) and (max-width: 1300px) {
+	.btn-back-hide {
+		display: none;
+	}
+}

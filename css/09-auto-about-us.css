@@ -11,18 +11,22 @@
 .container-about-us h1 {
     font-size: 45px;
     font-weight: 700;
-    color: #292929;
+    font-family: 'Poppins', sans-serif;
+    color: #333333;
 }
 
 .container-about-us p {
     margin: 10px 0 50px 0;
     font-size: 17px;
-    color: #292929;
 }
 
 .about-us-info {
     height: 370px;
     margin-top: 50px;
+}
+
+.about-us-info h1 {
+    font-family: 'Raleway', sans-serif;
 }
 
 .about-us-info-1 {

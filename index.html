@@ -32,8 +32,6 @@
 		<link rel="stylesheet" href="css/modal-window-item.css">
 		<link rel="stylesheet" href="css/modal-window-chat.css">
 
-		<link rel="stylesheet" href="css/burger-menu.css">
-
 		<title>Авто Мастер</title>
 	</head>
 
@@ -834,13 +832,40 @@
 		<!-- Фиксированные кнопки обратной связи и "вверх" -->
 		<div class="container-fix-element">
 			<div class="btn-contact">
-				<input class="btn-open-modal-window-messengers" type="image" src='icons/icons-chat-white.png' />
+				<input class="btn-open-modal-window-chat" type="image" src='icons/icons-chat-white.png' />
+				
+				
+				<!-- Модальное окно для фиксированных кнопок обратной связи --> 
+				<div class="modal-window-chat">		
+					<ul>							
+						<li>
+							<img src="icons/whatsapp-64x64.png" alt="whatsapp">
+						</li>
+		
+						<li>
+							<img src="icons/viber-64x64.png" alt="viber">
+						</li>
+		
+						<li>
+							<img src="icons/telegram-64x64.png" alt="telegram">
+						</li>
+						
+						<li>
+							<!-- <img src="icons/close.png" alt="close" class="btn-close-modal-window-chat"> -->
+							<button class="btn-close-modal-window-chat">✖</button>
+						</li>
+					</ul>		
+				</div>
 			</div>
 
 			<div class="btn-up">
 				<a>&#8679;</a>
 			</div>
 		</div>
+
+
+		
+		
 
 
 
@@ -982,26 +1007,7 @@
 
 
 
-		<!-- Модальное окно для фиксированных кнопок обратной связи --> 
-		<div class="modal-window-chat">
-
-			<!-- HTML код модального окна -->
-			<div class="modal-window-messengers">						
-				<div>
-					<img src="icons/whatsapp-64x64.png" alt="whatsapp">
-				</div>
-
-				<div>
-					<img src="icons/viber-64x64.png" alt="viber">
-				</div>
-
-				<div>
-					<img src="icons/telegram-64x64.png" alt="telegram">
-				</div>
-				
-				<button class="btn-close-modal-window-messengers btn">ЗАКРЫТЬ</button>
-			</div>		
-		</div>
+		
 
 
 
@@ -1036,7 +1042,7 @@
 		<script src="js/10-auto-evaluate-repairs-send-form.js"></script>
 		<script src="js/12-auto-footer-form-valid.js"></script>
 		<script src="js/modal-window-chat.js"></script>
-        <script src="js/container-gallery.js"></script>
+		<!-- <script src="js/container-gallery.js"></script> -->
 		<script src="js/container-fix-element.js"></script>
 		<script src="js/modal-window(01_03_06)form-send.js"></script>
 		<script src="js/modal-window(01_03_06)form-send-valid.js"></script>

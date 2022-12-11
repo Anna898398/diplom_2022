@@ -1,5 +1,6 @@
 /* Полный перечень услуг */
 .container-list-services {    
+    font-family: 'Poppins', sans-serif;
     padding: 100px 70px 20px 70px;
     background-repeat: no-repeat;
     background-attachment: fixed;

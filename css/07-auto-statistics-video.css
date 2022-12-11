@@ -13,8 +13,10 @@
 .content-box h1 {
     font-size: 40px;
     font-weight: 700;
+    font-family: 'Poppins', sans-serif;
     margin-bottom: 20px;
     transform: scale(1, 1.1);
+    color: #333333;
 }
 
 .content-box p {
@@ -53,6 +55,7 @@
 .statistics-box-info p {
     font-size: 20px;
     font-weight: 700;
+    color: #333333;
 }
 
 .statistics-box-info div {

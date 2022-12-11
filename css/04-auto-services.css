@@ -1,14 +1,17 @@
 /* Таблица с основным перечнем услуг и фото */
 .container-services {
+    font-family: 'Poppins', sans-serif;
     display: flex;
     flex-direction: column;
     text-align: center;
+    color: #333333;
 }
 
 .container-services h1 {
     font-size: 45px;
     font-weight: 700;
     margin-top: 100px;
+    color: #333333;
 }
 
 .container-services p {
