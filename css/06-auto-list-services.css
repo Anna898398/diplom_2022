@@ -83,6 +83,16 @@
     font-size: 17px;
 }
 
+.item-box-2 ol > li:before {
+    content: '✓';
+    position: absolute; 
+    top: -5px; 
+    left: 0;
+    color: #4290e0;
+    font-weight: 900;
+    font-size: 20px;
+}
+
 .item-box-2 .more-li-1 {
     margin-bottom: 0;
 }
@@ -97,16 +107,6 @@
 
 #more ol {
     width: 100%;
-}
-
-.item-box-2 ol > li:before {
-    content: '✓';
-    position: absolute; 
-    top: -5px; 
-    left: 0;
-    color: #4290e0;
-    font-weight: 900;
-    font-size: 20px;
 }
 
 #more {
