@@ -25,6 +25,8 @@
 .container-evaluate-repairs form {
     width: 100%;
     height: 50px;
+    padding: 0;
+    margin: 0;
 }
 
 .container-evaluate-repairs form input {
@@ -34,6 +36,11 @@
     padding: 10px;
     text-align: center;
     cursor: pointer;        
+}
+
+.container-evaluate-repairs form input:active, 
+.container-evaluate-repairs form input:focus {
+    outline: none;
 }
 
 
@@ -64,7 +71,6 @@
     border: 2px solid #ebebeb;
     cursor: pointer;    
     padding: 0;
-    margin-right: 20px;
     font-size: 15px;
     overflow: hidden;   
     background-color: #ffffff;
@@ -74,16 +80,8 @@
     border: 2px solid #4290e0;
 }
 
-
-
-
-
 /* кнопка отправки данных */
 .form-btn-send {
-    height: 100%;
-}
-
-.form-btn-send button {
     border: 2px solid #4290e0;
     position: relative;
     padding: 10px 30px;
@@ -95,118 +93,348 @@
     background-position: 100%;
     background-size: 400%;
     transition: background 400ms ease-in-out;
+    margin-left: 40px;
 }
 
-.form-btn-send button:hover {
+.form-btn-send:hover {
     color: rgba(0, 0, 0, 0.925);    
     background-position: 0;    
 }
 
 
-@media screen and (min-width: 1601px) {
+
+/* _______________________________________________________ */
+
+
+
+@media screen and (min-width: 1651px) {
+
     /* 10 Оценка состояния автомобиля */
-.container-evaluate-repairs {
-    width: 100%;
-    padding: 50px 150px 70px 150px;
-    background-color: #292929;
-    text-align: center;
-    background-color: aqua;
+    .container-evaluate-repairs {
+        width: 100%;
+        padding: 50px 150px 70px 150px;
+        background-color: #292929;
+        text-align: center;
+    }
+
+    .container-evaluate-repairs h1 {
+        font-size: 40px;
+        font-weight: 700;
+        color: rgb(255, 255, 255);
+    }
+
+    .container-evaluate-repairs span {
+        color: #4290e0;
+    }
+
+    .container-evaluate-repairs p {
+        font-size: 17px;
+        color: rgb(255, 255, 255);
+        margin-bottom: 50px;
+    }
+
+    .container-evaluate-repairs form {
+        width: 100%;
+        height: 50px;
+        padding: 0;
+        margin: 0;
+    }
+
+    .container-evaluate-repairs form input {
+        width: 100%;
+        height: 100%;
+        border: none;
+        padding: 10px;
+        text-align: center;
+        cursor: pointer;        
+    }
+
+    .container-evaluate-repairs form input:active, 
+    .container-evaluate-repairs form input:focus {
+        outline: none;
+    }
+
+
+    /* категория авто */
+    /* марка авто */
+    /* год выпуска авто */
+    .form-category,
+    .form-brand,
+    .form-range {
+        height: 100%;
+        border: 2px solid #ebebeb;
+        cursor: pointer;    
+        padding: 0;
+        margin-right: 25px;
+        font-size: 17px;
+    } 
+
+    .form-category:hover,
+    .form-brand:hover,
+    .form-range:hover {
+        border: 2px solid #4290e0;
+    }
+
+
+    /* добавить файл */
+    .form-file {
+        height: 100%;
+        border: 2px solid #ebebeb;
+        cursor: pointer;    
+        padding: 0;
+        font-size: 15px;
+        overflow: hidden;   
+        background-color: #ffffff;
+    }
+
+    .form-file:hover {
+        border: 2px solid #4290e0;
+    }
+
+    /* кнопка отправки данных */
+    .form-btn-send {
+        border: 2px solid #4290e0;
+        position: relative;
+        padding: 10px 30px;
+        font-size: 18px;
+        font-weight: 500;
+        color: rgb(255, 255, 255);
+        background-color: rgba(0, 0, 0, 0);
+        background-image: linear-gradient(135deg, #f1d14e 50%, transparent 50%);
+        background-position: 100%;
+        background-size: 400%;
+        transition: background 400ms ease-in-out;
+        margin-left: 40px;
+    }
+
+    .form-btn-send:hover {
+        color: rgba(0, 0, 0, 0.925);    
+        background-position: 0;    
+    }
 }
 
-.container-evaluate-repairs h1 {
-    font-size: 40px;
-    font-weight: 700;
-    color: rgb(255, 255, 255);
+
+
+/* _______________________________________________________ */
+
+
+
+@media screen and (min-width: 991px) and (max-width: 1300px) {
+
+    /* 10 Оценка состояния автомобиля */
+    .container-evaluate-repairs {
+        width: 100%;
+        padding: 50px 70px 70px 70px;
+        background-color: #292929;
+        text-align: center;
+    }
+
+    .container-evaluate-repairs h1 {
+        font-size: 40px;
+        font-weight: 700;
+        color: rgb(255, 255, 255);
+    }
+
+    .container-evaluate-repairs span {
+        color: #4290e0;
+    }
+
+    .container-evaluate-repairs p {
+        font-size: 17px;
+        color: rgb(255, 255, 255);
+        margin-bottom: 50px;
+    }
+
+    .container-evaluate-repairs form {
+        width: 100%;
+        height: 45px;
+        padding: 0;
+        margin: 0;
+    }
+
+    .container-evaluate-repairs form input {
+        width: 100%;
+        height: 100%;
+        border: none;
+        padding: 10px;
+        text-align: center;
+        cursor: pointer;        
+    }
+
+    .container-evaluate-repairs form input:active, 
+    .container-evaluate-repairs form input:focus {
+        outline: none;
+    }
+
+
+    /* категория авто */
+    /* марка авто */
+    /* год выпуска авто */
+    .form-category,
+    .form-brand,
+    .form-range {
+        height: 100%;
+        border: 2px solid #ebebeb;
+        cursor: pointer;    
+        padding: 0;
+        margin-right: 25px;
+        font-size: 15px;
+    } 
+
+    .form-category:hover,
+    .form-brand:hover,
+    .form-range:hover {
+        border: 2px solid #4290e0;
+    }
+
+
+    /* добавить файл */
+    .form-file {
+        height: 100%;
+        border: 2px solid #ebebeb;
+        cursor: pointer;    
+        padding: 0;
+        font-size: 13px;
+        overflow: hidden;   
+        background-color: #ffffff;
+    }
+
+    .form-file:hover {
+        border: 2px solid #4290e0;
+    }
+
+    /* кнопка отправки данных */
+    .form-btn-send {
+        border: 2px solid #4290e0;
+        height: 100%;
+        position: relative;
+        padding: 10px 20px;
+        font-size: 15px;
+        font-weight: 500;
+        color: rgb(255, 255, 255);
+        background-color: rgba(0, 0, 0, 0);
+        background-image: linear-gradient(135deg, #f1d14e 50%, transparent 50%);
+        background-position: 100%;
+        background-size: 400%;
+        transition: background 400ms ease-in-out;
+        margin-left: 40px;
+    }
+
+    .form-btn-send:hover {
+        color: rgba(0, 0, 0, 0.925);    
+        background-position: 0;    
+    }
 }
 
-.container-evaluate-repairs span {
-    color: #4290e0;
-}
-
-.container-evaluate-repairs p {
-    font-size: 17px;
-    color: rgb(255, 255, 255);
-    margin-bottom: 50px;
-}
-
-.container-evaluate-repairs form {
-    width: 100%;
-    height: 50px;
-}
-
-.container-evaluate-repairs form input {
-    width: 100%;
-    height: 100%;
-    border: none;
-    padding: 10px;
-    text-align: center;
-    cursor: pointer;        
-}
 
 
-/* категория авто */
-/* марка авто */
-/* год выпуска авто */
-.form-category,
-.form-brand,
-.form-range {
-    height: 100%;
-    border: 2px solid #ebebeb;
-    cursor: pointer;    
-    padding: 0;
-    margin-right: 25px;
-    font-size: 17px;
-} 
-
-.form-category:hover,
-.form-brand:hover,
-.form-range:hover {
-    border: 2px solid #4290e0;
-}
-
-
-/* добавить файл */
-.form-file {
-    height: 100%;
-    border: 2px solid #ebebeb;
-    cursor: pointer;    
-    padding: 0;
-    margin-right: 20px;
-    font-size: 15px;
-    overflow: hidden;   
-    background-color: #ffffff;
-}
-
-.form-file:hover {
-    border: 2px solid #4290e0;
-}
+/* _______________________________________________________ */
 
 
 
+@media screen and (min-width: 790px) and (max-width: 990px) {
+
+    /* 10 Оценка состояния автомобиля */
+    .container-evaluate-repairs {
+        width: 100%;
+        padding: 50px 50px 70px 50px;
+        background-color: #292929;
+        text-align: center;
+    }
+
+    .container-evaluate-repairs h1 {
+        font-size: 40px;
+        font-weight: 700;
+        color: rgb(255, 255, 255);
+    }
+
+    .container-evaluate-repairs span {
+        color: #4290e0;
+    }
+
+    .container-evaluate-repairs p {
+        font-size: 17px;
+        color: rgb(255, 255, 255);
+        margin-bottom: 50px;
+    }
+
+    .container-evaluate-repairs form {
+        width: 100%;
+        height: 45px;
+        padding: 0;
+        margin: 0;
+    }
+
+    .container-evaluate-repairs form input {
+        width: 100%;
+        height: 100%;
+        border: none;
+        padding: 10px;
+        text-align: center;
+        cursor: pointer;        
+    }
+
+    .container-evaluate-repairs form input:active, 
+    .container-evaluate-repairs form input:focus {
+        outline: none;
+    }
 
 
-/* кнопка отправки данных */
-.form-btn-send {
-    height: 100%;
-    background-color: #f1d14e;
-}
+    /* категория авто */
+    /* марка авто */
+    /* год выпуска авто */
+    .form-category,
+    .form-brand,
+    .form-range {
+        height: 100%;
+        border: 2px solid #ebebeb;
+        cursor: pointer;    
+        padding: 0;
+        margin-right: 25px;
+        font-size: 15px;
+    } 
 
-.form-btn-send button {
-    border: 2px solid #4290e0;
-    position: relative;
-    padding: 10px 30px;
-    font-size: 18px;
-    font-weight: 500;
-    color: rgb(255, 255, 255);
-    background-color: rgba(0, 0, 0, 0);
-    background-image: linear-gradient(135deg, #f1d14e 50%, transparent 50%);
-    background-position: 100%;
-    background-size: 400%;
-    transition: background 400ms ease-in-out;
-}
+    .form-category:hover,
+    .form-brand:hover,
+    .form-range:hover {
+        border: 2px solid #4290e0;
+    }
 
-.form-btn-send button:hover {
-    color: rgba(0, 0, 0, 0.925);    
-    background-position: 0;    
-}
+
+    /* добавить файл */
+    .form-file {
+        height: 100%;
+        border: 2px solid #ebebeb;
+        cursor: pointer;    
+        padding: 0;
+        font-size: 13px;
+        overflow: hidden;   
+        background-color: #ffffff;
+    }
+
+    .form-file:hover {
+        border: 2px solid #4290e0;
+    }
+
+    /* кнопка отправки данных */
+    .form-btn-send {
+        border: 2px solid #4290e0;
+        height: 100%;
+        position: relative;
+        padding: 10px 20px;
+        font-size: 15px;
+        font-weight: 500;
+        color: rgb(255, 255, 255);
+        background-color: rgba(0, 0, 0, 0);
+        background-image: linear-gradient(135deg, #f1d14e 50%, transparent 50%);
+        background-position: 100%;
+        background-size: 400%;
+        transition: background 400ms ease-in-out;
+        margin-left: 40px;
+    }
+
+    .form-btn-send:hover {
+        color: rgba(0, 0, 0, 0.925);    
+        background-position: 0;    
+    }
 }
