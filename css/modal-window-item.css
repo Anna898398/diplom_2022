@@ -31,13 +31,28 @@
 .modal-window-content-5 {
 	position: fixed;
 	top: 0;
-	left: 200px;
-	padding: 40px;
+	left: 0;
+	right: 0;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 70px;
 	width: 70%;
-	background: #fff;
+	height: 100vh;
+	background-color: #2d2d2d;
 	border: none;
 	z-index: 3;
 	opacity: 1;
+}
+
+.content-img {
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+	margin-bottom: 50px;
+}
+
+.content-img img{
+	width: 40%;
 }
 
 .modal-window-content-1 h1,
@@ -45,7 +60,10 @@
 .modal-window-content-3 h1,
 .modal-window-content-4 h1,
 .modal-window-content-5 h1 {
-	margin-bottom: 10px;
+	margin-bottom: 20px;
+	color: #4290e0;
+	font-size: 40px;
+	font-weight: 700;
 }
 
 .modal-window-content-1 p,
@@ -54,17 +72,19 @@
 .modal-window-content-4 p,
 .modal-window-content-5 p  {
 	font-size: 16px;
+	color: #ffffff;
 }
 
 .btn-close-modal-window-item {
-	width: 150px;
-    border: 2px solid #292929;
+	width: 100px;
+	height: 100px;
+    border: 2px solid #4290e0;
 	border-radius: 0;
 	margin-left: 40px;
     padding: 10px 0;
-    font-size: 18px;
-    font-weight: 500;
-    color: #2d2d2d;
+    font-size: 30px;
+    font-weight: 900;
+    color: #ffffff;
     background-image: linear-gradient(135deg, #4290e0 50%, transparent 50%);
     background-position: 100%;
     background-size: 400%;
@@ -73,4 +93,5 @@
 
 .btn-close-modal-window-item:hover {
     background-position: 0;    
+	color: #ffffff;
 }

@@ -487,9 +487,10 @@
     }
 
     .item-box-1 .btn-open-modal-window {
+        display: block;
         width: 230px;
         height: 50px;
-        margin-top: 0;
+        margin-top: 50px;
         border: 2px solid #4290e0;
         padding: 10px 0;
         font-size: 15px;

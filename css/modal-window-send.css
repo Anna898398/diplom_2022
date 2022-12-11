@@ -3,7 +3,7 @@
 	display: none;
 }
 
-.modal-window-form-send:before {
+/* .modal-window-form-send:before {
 	content: '';
 	background: #000;
 	position: fixed; 
@@ -12,21 +12,25 @@
 	width: 100%;
 	opacity: 0.7;
 	z-index: 2;
-}
+} */
 
 
 /* стили к HTML коду модального окна */
 .modal-window {
 	position: fixed;
 	top: 0;
-	left: 200px;
+	left: 0;
+	right: 0;
+	margin-left: auto;
+	margin-right: auto;
 	padding: 40px;
 	width: 70%;
 	background: #fff;
 	border: none;
 	z-index: 3;
 	opacity: 1;	
-	/* border: 1px solid #4290e0; */
+	border: 1px solid #4290e0;
+	border-top: none;
 }
 
 
@@ -44,10 +48,6 @@
 .box-text p {
 	font-size: 16px;
 }
-
-/* .box-blue {
-
-} */
 
 
 /* Форма ввода в модальном окне */
