@@ -1,7 +1,7 @@
 function myreadMoreFunction() {
-    var dots = document.getElementById("dots");
-    var moreText = document.getElementById("more");
-    var btnText = document.getElementById("myReadBtn");
+    let dots = document.getElementById("dots");
+    let moreText = document.getElementById("more");
+    let btnText = document.getElementById("myReadBtn");
 
     if (dots.style.display === "none") {
         dots.style.display = "inline";
