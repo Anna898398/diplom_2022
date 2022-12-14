@@ -702,13 +702,13 @@ header {
     }
 
     .menu .title::before {
-        content: '▼';
+        content: '⮟';
         font-size: 30px;
-        color: #ffffff;
+        color: #4290e0;
     }
 
     .menu.open .title::before {
-        content: '▲';
+        content: '⮝';
     }
 
     .menu.open ul {
@@ -987,7 +987,7 @@ header {
         display: flex;
         justify-content: space-between;
         width: 100%;
-        height: 100px;
+        height: 50px;
     }
 
 
@@ -996,18 +996,18 @@ header {
         display: flex;
         width: 100%;
         background-color: #0e0e0e;
-        height: 70px;
+        height: 35px;
     }
 
     .menu {
         display: block;
         flex-grow: 1;
-        padding: 15px 0 0 20px;
+        padding: 3px 0 0 20px;
     }
     
     .menu ul {
         position: relative;
-        top: 10px;
+        top: 2px;
         left: -20px;
         list-style: none;
         display: none;
@@ -1021,13 +1021,13 @@ header {
     }
 
     .menu .title::before {
-        content: '▼';
-        font-size: 30px;
+        content: '⮟';
+        font-size: 20px;
         color: #ffffff;
     }
 
     .menu.open .title::before {
-        content: '▲';
+        content: '⮝';
     }
 
     .menu.open ul {
@@ -1068,9 +1068,9 @@ header {
     /* 1) блок для логотипа */
     .container-header-logo {
         background-color: #2d2d2d;
-        width: 250px;
+        width: 170px;
         height: 100%;
-        padding: 25px 20px;
+        padding: 7px 20px;
         background: #2d2d2d;
         overflow: hidden;
     }
@@ -1174,7 +1174,7 @@ header {
         background-color: #2d2d2d;
         cursor: pointer;
         padding: 20px 20px 20px 10px;
-        top: 170px;
+        top: 80px;
         right: 0;
     }
 
@@ -1188,7 +1188,7 @@ header {
         display: block;
         cursor: pointer;
         border: none;
-        font-size: 50px;
+        font-size: 35px;
         padding: 0 30px 0 0;
         background-color: #2d2d2d;
         color: #ffffff;
