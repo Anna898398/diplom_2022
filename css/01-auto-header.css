@@ -1052,15 +1052,15 @@ header {
 
     .btn-open-modal-window-hide {
         display: flex;
-        width: 300px;
+        width: 240px;
         height: 100%;
-        font-size: 22px;
+        font-size: 17px;
         font-weight: 600;
         font-family: 'Lucida Sans Regular', sans-serif;
         border: none;
         background: linear-gradient(45deg, transparent 50px, #4290e0 0);
         color: #272725;
-        padding: 15px 0 0 80px;
+        padding: 15px 0 0 70px;
     }
     
     .btn-open-modal-window-hide:hover {
@@ -1176,14 +1176,14 @@ header {
         background-color: #2d2d2d;
         cursor: pointer;
         padding: 20px 20px 20px 10px;
-        top: 140px;
+        top: 125px;
         right: 0;
     }
 
     .menu-burger-hide a {
         text-decoration: none;
         color: #ffffff;
-        font-size: 20px;
+        font-size: 17px;
     }
       
     .btn-open-menu-burger {
