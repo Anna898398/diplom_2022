@@ -808,7 +808,7 @@
         flex-direction: column;
         position: absolute; 
         left: 8%;
-        line-height: 10px;
+        line-height: 15px;
         opacity: 0;
         transition: all 1s ease-out .6s;
         top: 30%;
@@ -819,7 +819,7 @@
     .slider-inner .text-h-3 h1 {
         color: #4290e0;
         font-weight: 700;
-        font-size: 25px;
+        font-size: 35px;
         font-family: 'Poppins', sans-serif;
     }
     
@@ -828,7 +828,7 @@
     .slider-inner .text-h-3 h2 {
         color: rgb(255, 255, 255);
         font-weight: 700;
-        font-size: 13px;
+        font-size: 15px;
         font-family: 'Poppins', sans-serif;
     }
     
@@ -837,7 +837,7 @@
     .slider-inner .text-h-3 h3 {
         color: rgb(255, 255, 255);
         font-weight: 400;
-        font-size: 10px;
+        font-size: 13px;
         font-family: 'Poppins', sans-serif;
     }
     
