@@ -328,8 +328,8 @@
 
     .photo-box {
         display: flex;
-        width: 250px;
-        height: 130px;    
+        width: 100%;
+        height: auto;    
         overflow: hidden;
         align-items: center;
         padding: 0;
@@ -338,7 +338,7 @@
 
     .photo-box div {
         overflow: hidden;
-        width: 85px;
+        width: 30%;
         font-size: 160px;
         line-height: 125px;
         color: #4290e0;
@@ -347,7 +347,7 @@
 
     .photo-box a {
         overflow: hidden;
-        width: 1fr;
+        width: 65%;
         height: auto; 
     }
 
