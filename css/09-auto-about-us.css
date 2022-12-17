@@ -4,8 +4,8 @@
     flex-direction: column;
     text-align: center;
     width: 100%;
-    height: 750px;
-    padding: 70px 80px;
+    height: auto;
+    padding: 70px;
 }
 
 .container-about-us h1 {
@@ -21,7 +21,11 @@
 }
 
 .about-us-info {
-    height: 370px;
+    display: grid;
+    grid-template-columns: repeat(3, 370px);
+    grid-template-rows: 370px;
+    column-gap: 25px;
+    justify-content: center;
     margin-top: 50px;
 }
 
@@ -29,21 +33,21 @@
     font-family: 'Raleway', sans-serif;
 }
 
-.about-us-info-1 {
-    padding: 50px;
-    margin-right: 30px;
-    background-color: #ebebeb;
-}
-
-.about-us-info-2 {
-    padding: 50px;
-    margin-right: 30px;
-    background-color: #ebebeb;
-}
-
+.about-us-info-1,
+.about-us-info-2,
 .about-us-info-3 {
+    width: 100%;
+    height: 100%;
     padding: 50px;
-    background-color: #ebebeb;
+    background-color: #f3f3f3;
+}
+
+.about-us-info .active {
+    border-bottom: 4px solid #4290e0;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 1px -3px 24px 0 rgba(226, 226, 226, 0.493);
+    cursor: pointer;
+    transition: all .3s ease-out .3s;
 }
 
 .about-us-info-1:hover,
@@ -51,8 +55,9 @@
 .about-us-info-3:hover {
     border-bottom: 4px solid #4290e0;
     background-color: rgb(255, 255, 255);
-    box-shadow: 1px -3px 24px 8px rgba(34, 60, 80, 0.493);
+    box-shadow: 1px -3px 24px 0 rgba(226, 226, 226, 0.493);
     cursor: pointer;
+    transition: all .3s ease-out .3s;
 }
 
 .about-us-info-1 h1,
@@ -91,14 +96,96 @@
 
 
 
-@media screen and (min-width: 1651px) {
+@media screen and (min-width: 991px) and (max-width: 1300px) {
+    /* 09 О нас */
     .container-about-us {
         display: flex;
         flex-direction: column;
         text-align: center;
         width: 100%;
-        height: 750px;
-        padding: 70px 150px;
+        height: auto;
+        padding: 70px;
+    }
+
+    .container-about-us h1 {
+        font-size: 45px;
+        font-weight: 700;
+        font-family: 'Poppins', sans-serif;
+        color: #333333;
+    }
+
+    .container-about-us p {
+        margin: 10px 0 50px 0;
+        font-size: 17px;
+    }
+
+    .about-us-info {
+        display: grid;
+        grid-template-columns: repeat(3, 270px);
+        grid-template-rows: 350px;
+        column-gap: 25px;
+        justify-content: center;
+        margin-top: 50px;
+    }
+
+    .about-us-info h1 {
+        font-family: 'Raleway', sans-serif;
+    }
+
+    .about-us-info-1,
+    .about-us-info-2,
+    .about-us-info-3 {
+        width: 100%;
+        height: 100%;
+        padding: 30px;
+        background-color: #f3f3f3;
+    }
+
+    .about-us-info .active {
+        border-bottom: 4px solid #4290e0;
+        background-color: rgb(255, 255, 255);
+        box-shadow: 1px -3px 24px 0 rgba(226, 226, 226, 0.493);
+        cursor: pointer;
+        transition: all .3s ease-out .3s;
+    }
+
+    .about-us-info-1:hover,
+    .about-us-info-2:hover,
+    .about-us-info-3:hover {
+        border-bottom: 4px solid #4290e0;
+        background-color: rgb(255, 255, 255);
+        box-shadow: 1px -3px 24px 0 rgba(226, 226, 226, 0.493);
+        cursor: pointer;
+        transition: all .3s ease-out .3s;
+    }
+
+    .about-us-info-1 h1,
+    .about-us-info-2 h1,
+    .about-us-info-3 h1 {
+        font-size: 30px;
+        color: #292929;
+    }
+
+    .about-us-info-1 p,
+    .about-us-info-2 p,
+    .about-us-info-3 p {
+        color: #292929;
+    }
+
+    .info-icon {
+        display: flex;
+        width: 100px;
+        height: 100px;
+        background-color: #4290e0;
+        border-radius: 50%;
+        padding: auto;
+        margin: 20px auto 40px auto;
+        font-size: 45px;
+        color: rgb(255, 255, 255);
+    }
+
+    .info-icon i {
+        margin: auto;
     }
 }
 
@@ -109,49 +196,57 @@
 
 
 
-@media screen and (min-width: 790px) and (max-width: 990px) {
+@media screen and (min-width: 751px) and (max-width: 990px) {
     /* 09 О нас */
     .container-about-us {
         display: flex;
         flex-direction: column;
         text-align: center;
         width: 100%;
-        height: 650px;
-        padding: 70px;
+        height: auto;
+        padding: 70px 40px;
     }
 
     .container-about-us h1 {
-        font-size: 45px;
+        font-size: 35px;
         font-weight: 700;
-        color: #292929;
+        font-family: 'Poppins', sans-serif;
+        color: #333333;
     }
 
     .container-about-us p {
-        margin: 10px 0 40px 0;
-        font-size: 17px;
-        color: #292929;
+        margin: 10px 0 50px 0;
+        font-size: 15px;
     }
 
     .about-us-info {
-        height: auto;
+        display: grid;
+        grid-template-columns: repeat(3, 220px);
+        grid-template-rows: 250px;
+        column-gap: 20px;
+        justify-content: center;
         margin-top: 50px;
     }
 
-    .about-us-info-1 {
-        padding: 30px 30px 20px 30px;
-        margin-right: 30px;
-        background-color: #ebebeb;
+    .about-us-info h1 {
+        font-family: 'Raleway', sans-serif;
     }
 
-    .about-us-info-2 {
-        padding: 30px 30px 20px 30px;
-        margin-right: 30px;
-        background-color: #ebebeb;
-    }
-
+    .about-us-info-1,
+    .about-us-info-2,
     .about-us-info-3 {
-        padding: 30px 30px 20px 30px;
-        background-color: #ebebeb;
+        width: 100%;
+        height: 100%;
+        padding: 30px 20px 0 20px;
+        background-color: #f3f3f3;
+    }
+
+    .about-us-info .active {
+        border-bottom: 4px solid #4290e0;
+        background-color: rgb(255, 255, 255);
+        box-shadow: 1px -3px 24px 0 rgba(226, 226, 226, 0.493);
+        cursor: pointer;
+        transition: all .3s ease-out .3s;
     }
 
     .about-us-info-1:hover,
@@ -159,14 +254,15 @@
     .about-us-info-3:hover {
         border-bottom: 4px solid #4290e0;
         background-color: rgb(255, 255, 255);
-        box-shadow: 1px -3px 24px 8px rgba(34, 60, 80, 0.493);
+        box-shadow: 1px -3px 24px 0 rgba(226, 226, 226, 0.493);
         cursor: pointer;
+        transition: all .3s ease-out .3s;
     }
 
     .about-us-info-1 h1,
     .about-us-info-2 h1,
     .about-us-info-3 h1 {
-        font-size: 20px;
+        font-size: 25px;
         color: #292929;
     }
 
@@ -174,7 +270,6 @@
     .about-us-info-2 p,
     .about-us-info-3 p {
         color: #292929;
-        font-size: 17px;
     }
 
     .info-icon {
@@ -184,8 +279,109 @@
         background-color: #4290e0;
         border-radius: 50%;
         padding: auto;
-        margin: 20px auto 20px auto;
+        margin: 0 auto 20px auto;
         font-size: 40px;
+        color: rgb(255, 255, 255);
+    }
+
+    .info-icon i {
+        margin: auto;
+    }
+}
+
+
+
+/* __________________________________________________________________________________________________________________________ */
+
+
+
+
+@media screen and (max-width: 750px) {
+    /* 09 О нас */
+    .container-about-us {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+        height: auto;
+        padding: 70px 20px;
+    }
+
+    .container-about-us h1 {
+        font-size: 35px;
+        font-weight: 700;
+        font-family: 'Poppins', sans-serif;
+        color: #333333;
+    }
+
+    .container-about-us p {
+        margin: 10px 0 50px 0;
+        font-size: 15px;
+    }
+
+    .about-us-info {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        width: auto;
+        height: auto;
+        margin-top: 50px;
+    }
+
+    .about-us-info h1 {
+        font-family: 'Raleway', sans-serif;
+    }
+
+    .about-us-info-1,
+    .about-us-info-2,
+    .about-us-info-3 {
+        width: 100%;
+        height: 250px;
+        padding: 30px 20px 20px 20px;
+        margin-bottom: 40px;
+        background-color: #f3f3f3;
+    }
+
+    .about-us-info .active {
+        border-bottom: 4px solid #4290e0;
+        background-color: rgb(255, 255, 255);
+        box-shadow: 1px -3px 24px 0 rgba(226, 226, 226, 0.493);
+        cursor: pointer;
+        transition: all .3s ease-out .3s;
+    }
+
+    .about-us-info-1:hover,
+    .about-us-info-2:hover,
+    .about-us-info-3:hover {
+        border-bottom: 4px solid #4290e0;
+        background-color: rgb(255, 255, 255);
+        box-shadow: 1px -3px 24px 0 rgba(226, 226, 226, 0.493);
+        cursor: pointer;
+        transition: all .3s ease-out .3s;
+    }
+
+    .about-us-info-1 h1,
+    .about-us-info-2 h1,
+    .about-us-info-3 h1 {
+        font-size: 25px;
+        color: #292929;
+    }
+
+    .about-us-info-1 p,
+    .about-us-info-2 p,
+    .about-us-info-3 p {
+        color: #292929;
+    }
+
+    .info-icon {
+        display: flex;
+        width: 60px;
+        height: 60px;
+        background-color: #4290e0;
+        border-radius: 50%;
+        padding: auto;
+        margin: 0 auto 20px auto;
+        font-size: 30px;
         color: rgb(255, 255, 255);
     }
 
