@@ -23,8 +23,8 @@
 /* таблица-сетка основным услуг */
 .container-box {
     display: grid;
-    grid-template-columns: 400px 400px 400px;
-    grid-template-rows: 400px 400px 400px;
+    grid-template-columns: repeat(3, 400px);
+    grid-template-rows: repeat(3, 400px);
     margin: 50px auto 0 auto;
 }
 
@@ -256,8 +256,8 @@
     /* таблица-сетка основным услуг */
     .container-box {
         display: grid;
-        grid-template-columns: 400px 400px 400px;
-        grid-template-rows: 400px 400px 400px;
+        grid-template-columns: repeat(3, 400px);
+        grid-template-rows: repeat(3, 400px);
         margin: 50px auto 0 auto;
     }
 
@@ -489,8 +489,8 @@
     /* таблица-сетка основным услуг */
     .container-box {
         display: grid;
-        grid-template-columns: 270px 270px 270px;
-        grid-template-rows: 270px 270px 270px;
+        grid-template-columns: repeat(3, 270px);
+        grid-template-rows: repeat(3, 270px);
         margin: 50px auto 0 auto;
     }
 
@@ -705,7 +705,7 @@
 
 
 
-@media screen and (min-width: 250px) and (max-width: 990px) {
+@media screen and (min-width: 751px) and (max-width: 990px) {
     /* Таблица с основным перечнем услуг и фото */
     .container-services {
         display: flex;
@@ -728,9 +728,247 @@
     /* таблица-сетка основным услуг */
     .container-box {
         display: grid;
-        grid-template-columns: 500px;
-        grid-template-rows: 500px 500px 500px 500px 500px 500px 500px 500px 500px;
-        row-gap: 40px;
+        grid-template-columns: repeat(3, 240px);
+        grid-template-rows: repeat(3, 240px);
+        margin: 50px auto 0 auto;       
+    }
+
+    .container-box img {
+        height: 100%;
+        transition: transform 1s ease-in-out;
+        cursor: pointer;
+    }
+
+    .container-box div {
+        overflow: hidden;
+    }
+
+    /* таблица с перечнем услуг */
+    /* 1 квадрат-текст "Сервис" blue */
+    .box-text-1 {
+        background-color: #4290e0;
+        cursor: pointer;
+        width: 100%;
+        height: 100%;
+    }
+
+    .box-text-1 h2 {
+        font-size: 23px;
+        font-weight: 700;
+        margin: 40px 0 15px 0;
+    }
+
+    .box-text-1 p {
+        font-size: 15px;
+        margin: 0 20px;
+    }
+
+    .box-text-1 h1 {
+        font-size: 67px;
+        color: #ffffff2a;
+        position: relative;
+        bottom: 60px;
+        left: 5px;
+        line-height: 0;
+    }
+
+
+    /* 3 квадрат-текст "Мастер" grey */
+    .box-text-2 {
+        background-color: #ebebeb;
+        cursor: pointer;
+        width: 100%;
+        height: 100%;
+    }
+
+    .box-text-2 h2 {
+        font-size: 23px;
+        font-weight: 700;
+        margin: 40px 0 15px 0;
+    }
+
+    .box-text-2 p {
+        font-size: 15px;
+        margin: 0 20px;
+    }
+
+    .box-text-2 h1 {
+        font-size: 67px;
+        color: #00000011;
+        position: relative;
+        bottom: 60px;
+        left: 5px;
+        line-height: 0;
+    }
+
+
+    /* 5 квадрат-текст "Авто" black */
+    .box-text-3 {
+        background-color: #292929;
+        cursor: pointer;
+        width: 100%;
+        height: 100%;
+    }
+
+    .box-text-3 h2 {
+        font-size: 23px;
+        font-weight: 700;
+        margin: 30px 0 15px 0;
+        color: #4290e0;
+    }
+
+    .box-text-3 p {
+        font-size: 15px;
+        margin: 0 20px;
+        color: #ffffff;
+    }
+
+    .box-text-3 h1 {
+        font-size: 67px;
+        color: #ffffff0a;
+        position: relative;
+        bottom: 75px;
+        left: 0;
+        line-height: 0;
+    }
+
+
+    /* 7 квадрат-текст "Шино" grey */
+    .box-text-4 {
+        background-color: #ebebeb;
+        cursor: pointer;
+        width: 100%;
+        height: 100%;
+    }
+
+    .box-text-4 h2 {
+        font-size: 23px;
+        font-weight: 700;
+        margin: 30px 0 15px 0;
+    }
+
+    .box-text-4 p {
+        font-size: 15px;
+        margin: 0 15px;
+    }
+
+    .box-text-4 h1 {
+        font-size: 67px;
+        color: #00000011;
+        position: relative;
+        bottom: 75px;
+        left: 0;
+        line-height: 0;
+    }
+
+    /* 9 квадрат-текст "Монтаж" blue */
+    .box-text-5 {
+        background-color: #4290e0;
+        cursor: pointer;
+        width: 100%;
+        height: 100%;
+    }
+
+    .box-text-5 h2 {
+        font-size: 23px;
+        font-weight: 700;
+        margin: 30px 0 15px 0;
+    }
+
+    .box-text-5 p {
+        font-size: 15px;
+        margin: 0 15px;
+    }
+
+    .box-text-5 h1 {
+        font-size: 67px;
+        color: #ffffff2a;
+        position: relative;
+        bottom: 95px;
+        left: 0;
+        line-height: 0;
+    }
+
+
+    /* текст "Жми!", который появляется при наведении на ячейку сетки */
+    .hover-text {
+        position: absolute; 
+        visibility: hidden;
+        background: rgba(0, 0, 0, 0.439);
+        font-size: 20px;
+        color: white;
+        top: 160px;
+    }
+
+    .hover-text h1 {
+        padding: 110px 0px;
+        text-align: center;
+    }
+
+    .box-text-1:hover .hover-text,
+    .box-text-2:hover .hover-text,
+    .box-text-3:hover .hover-text,
+    .box-text-4:hover .hover-text,
+    .box-text-5:hover .hover-text {
+        visibility: visible;
+        transition: 1s;
+        transform: translatey(-160px);
+        width: 100%;
+        height: 100%;
+    }
+
+    .box-text-1:hover,
+    .box-text-2:hover,
+    .box-text-3:hover,
+    .box-text-4:hover,
+    .box-text-5:hover {
+        filter: sepia(50%);
+        transition: 0.6s;
+    }
+
+
+    /* квадрат-фото увеличивается при наведении на него */
+    .box-img-1:hover img,
+    .box-img-2:hover img,
+    .box-img-3:hover img,
+    .box-img-4:hover img {
+        transform: scale(1.5);
+    }
+}
+
+
+/* _____________________________________________________________ */
+
+
+
+
+@media screen and (max-width: 750px) {
+
+    /* Таблица с основным перечнем услуг и фото */
+    .container-services {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .container-services h1 {
+        font-size: 38px;
+        font-weight: 700;
+        margin-top: 100px;
+    }
+
+    .container-services p {
+        font-size: 17px;
+        margin-bottom: 40px;
+    }
+
+
+    /* таблица-сетка основным услуг */
+    .container-box {
+        display: grid;
+        grid-template-columns: 270px;
+        grid-template-rows: repeat(5, 270px);
+        row-gap: 25px;
         margin: 50px auto 0 auto;
     }
 
@@ -745,150 +983,157 @@
     }
 
     /* таблица с перечнем услуг */
-/* 1 квадрат-текст "Сервис" blue */
-.box-text-1 {
-    background-color: #4290e0;
-    cursor: pointer;
-    width: 100%;
-    height: 100%;
-}
+    /* 1 квадрат-текст "Сервис" blue */
+    .box-text-1 {
+        background-color: #4290e0;
+        cursor: pointer;
+        width: 100%;
+        height: 100%;
+    }
 
-.box-text-1 h2 {
-    font-size: 40px;
-    font-weight: 700;
-    margin: 95px 0 20px 0;
-}
+    .box-text-1 h2 {
+        font-size: 25px;
+        font-weight: 600;
+        margin: 45px 0 20px 0;
+    }
 
-.box-text-1 p {
-    font-size: 20px;
-    margin: 0 30px;
-}
+    .box-text-1 p {
+        font-size: 15px;
+        margin: 0 20px;
+    }
 
-.box-text-1 h1 {
-    font-size: 145px;
-    color: #ffffff2a;
-    position: relative;
-    bottom: -80px;
-    left: 5px;
-    line-height: 0;
-}
-
-
-/* 3 квадрат-текст "Мастер" grey */
-.box-text-2 {
-    background-color: #ebebeb;
-    cursor: pointer;
-    width: 100%;
-    height: 100%;
-}
-
-.box-text-2 h2 {
-    font-size: 40px;
-    font-weight: 700;
-    margin: 95px 0 20px 0;
-}
-
-.box-text-2 p {
-    font-size: 20px;
-    margin: 0 30px;
-}
-
-.box-text-2 h1 {
-    font-size: 145px;
-    color: #00000011;
-    position: relative;
-    bottom: -80px;
-    left: 5px;
-    line-height: 0;
-}
+    .box-text-1 h1 {
+        font-size: 77px;
+        color: #ffffff2a;
+        position: relative;
+        bottom: 50px;
+        left: 5px;
+        line-height: 0;
+    }
 
 
-/* 5 квадрат-текст "Авто" black */
-.box-text-3 {
-    background-color: #292929;
-    cursor: pointer;
-    width: 100%;
-    height: 100%;
-}
+    /* 3 квадрат-текст "Мастер" grey */
+    .box-text-2 {
+        background-color: #ebebeb;
+        cursor: pointer;
+        width: 100%;
+        height: 100%;
+    }
 
-.box-text-3 h2 {
-    font-size: 40px;
-    font-weight: 700;
-    margin: 95px 0 20px 0;
-    color: #4290e0;
-}
+    .box-text-2 h2 {
+        font-size: 25px;
+        font-weight: 600;
+        margin: 45px 0 20px 0;
+    }
 
-.box-text-3 p {
-    font-size: 20px;
-    margin: 0 30px;
-    color: #ffffff;
-}
+    .box-text-2 p {
+        font-size: 15px;
+        margin: 0 20px;
+    }
 
-.box-text-3 h1 {
-    font-size: 145px;
-    color: #ffffff0a;
-    position: relative;
-    bottom: -80px;
-    left: 0;
-    line-height: 0;
-}
+    .box-text-2 h1 {
+        font-size: 77px;
+        color: #00000011;
+        position: relative;
+        bottom: 30px;
+        left: 5px;
+        line-height: 0;
+    }
 
 
-/* 7 квадрат-текст "Шино" grey */
-.box-text-4 {
-    background-color: #ebebeb;
-    cursor: pointer;
-    width: 100%;
-    height: 100%;
-}
+    /* 5 квадрат-текст "Авто" black */
+    .box-text-3 {
+        background-color: #292929;
+        cursor: pointer;
+        width: 100%;
+        height: 100%;
+    }
 
-.box-text-4 h2 {
-    font-size: 40px;
-    font-weight: 700;
-    margin: 95px 0 20px 0;
-}
+    .box-text-3 h2 {
+        font-size: 25px;
+        font-weight: 600;
+        margin: 45px 0 20px 0;
+        color: #4290e0;
+    }
 
-.box-text-4 p {
-    font-size: 20px;
-    margin: 0 30px;
-}
+    .box-text-3 p {
+        font-size: 15px;
+        margin: 0 20px;
+        color: #ffffff;
+    }
 
-.box-text-4 h1 {
-    font-size: 145px;
-    color: #00000011;
-    position: relative;
-    bottom: -80px;
-    left: 0;
-    line-height: 0;
-}
+    .box-text-3 h1 {
+        font-size: 77px;
+        color: #ffffff0a;
+        position: relative;
+        bottom: 75px;
+        left: -5px;
+        line-height: 0;
+    }
 
-/* 9 квадрат-текст "Монтаж" blue */
-.box-text-5 {
-    background-color: #4290e0;
-    cursor: pointer;
-    width: 100%;
-    height: 100%;
-}
 
-.box-text-5 h2 {
-    font-size: 40px;
-    font-weight: 700;
-    margin: 95px 0 20px 0;
-}
+    /* 7 квадрат-текст "Шино" grey */
+    .box-text-4 {
+        background-color: #ebebeb;
+        cursor: pointer;
+        width: 100%;
+        height: 100%;
+    }
 
-.box-text-5 p {
-    font-size: 20px;
-    margin: 0 30px;
-}
+    .box-text-4 h2 {
+        font-size: 25px;
+        font-weight: 600;
+        margin: 45px 0 20px 0;
+    }
 
-.box-text-5 h1 {
-    font-size: 145px;
-    color: #ffffff2a;
-    position: relative;
-    bottom: -50px;
-    left: -15px;
-    line-height: 0;
-}
+    .box-text-4 p {
+        font-size: 15px;
+        margin: 0 20px;
+    }
+
+    .box-text-4 h1 {
+        font-size: 77px;
+        color: #00000011;
+        position: relative;
+        bottom: 50px;
+        left: 0;
+        line-height: 0;
+    }
+
+    /* 9 квадрат-текст "Монтаж" blue */
+    .box-text-5 {
+        background-color: #4290e0;
+        cursor: pointer;
+        width: 100%;
+        height: 100%;
+    }
+
+    .box-text-5 h2 {
+        font-size: 25px;
+        font-weight: 600;
+        margin: 45px 0 20px 0;
+    }
+
+    .box-text-5 p {
+        font-size: 15px;
+        margin: 0 20px;
+    }
+
+    .box-text-5 h1 {
+        font-size: 77px;
+        color: #ffffff2a;
+        position: relative;
+        bottom: 90px;
+        left: -10px;
+        line-height: 0;
+    }
+
+    .box-img-1,
+    .box-img-2,
+    .box-img-3,
+    .box-img-4 {
+        display: none;
+    }
 
 
     /* текст "Жми!", который появляется при наведении на ячейку сетки */

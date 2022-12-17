@@ -157,18 +157,19 @@
 
 
 
-@media screen and (min-width: 790px) and (max-width: 990px) {
+@media screen and (min-width: 751px) and (max-width: 990px) {
     
     /* 07 Статистика, Видео */
     .container-statistics-and-video {
         display: flex;
-        height: 800px;
+        flex-direction: column;
+        height: auto;
         align-items: center;
-        padding: 0 70px;
+        padding: 70px 40px;
     }
 
     .content-box {
-        width: 65%;
+        width: 100%;
     }
 
     .content-box h1 {
@@ -176,24 +177,31 @@
         font-weight: 700;
         margin-bottom: 20px;
         transform: scale(1, 1.1);
+        text-align: center;
     }
 
     .content-box p {
         font-size: 17px;
         margin-bottom: 30px;
+        text-align: center;
+
     }
 
     /* Статистика */
     .statistics-box {
         display: flex;
-        flex-direction: column;
+        flex-wrap: wrap;
+        flex-direction: row;
+        background-color: antiquewhite;
     }
 
     .statistics-box-info {
+        width: 48%;
         display: flex;
         align-items: center;
         overflow: hidden;
         align-items: center;
+        background-color: aquamarine;
     }
 
     .statistics-box-info span {

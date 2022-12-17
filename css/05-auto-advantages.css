@@ -219,11 +219,11 @@
 
 
 
-@media screen and (min-width: 790px) and (max-width: 990px)  {
+@media screen and (min-width: 751px) and (max-width: 990px)  {
 
     /* Раздел - наши преимущества */
     .container-advantages {
-        padding: 0 70px 70px 70px;
+        padding: 0 40px 70px 40px;
         color: #363636;
     }
 
@@ -287,6 +287,87 @@
 
     .advantage-box-text p {
         font-size: 20px;
+        text-align: center;
+    }
+}
+
+
+
+
+/* __________________________________________________________________________________________________________________________ */
+
+
+
+
+@media screen and (max-width: 750px)  {
+
+    /* Раздел - наши преимущества */
+    .container-advantages {
+        padding: 0 15px 70px 15px;
+        color: #363636;
+    }
+
+    .container-advantages h1 {
+        text-align: center;
+        font-size: 38px;
+        font-weight: 700;
+        margin-top: 100px;
+    }
+
+    .container-advantages p {
+        font-size: 15px;
+        margin: 20px 0 0 0;
+        text-align: center;
+    }
+
+    .advantages {
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+    }
+
+    .advantage-box-1,
+    .advantage-box-2,
+    .advantage-box-3 {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin: 15px 0 0 0;
+    }
+
+    .advantage-box-img {
+        width: 50px;
+        height: auto;
+        border-right: none;
+        margin: 0 auto 0 auto;
+        padding-right: 0;
+    }
+
+    .advantage-box-img img {
+        width: 100%;
+    }
+
+    .advantage-box-text {
+        width: 100%;
+        margin: 0 20px 0 0;
+    }
+
+    .advantage-box-text h3 {
+        font-size: 20px;
+        font-weight: 700;
+        text-align: center;
+    }
+
+    .advantage-box-text div {
+        display: block;
+        width: 70px;
+        height: 3px;
+        background-color: #4290e0;
+        margin: 20px auto;
+    }
+
+    .advantage-box-text p {
+        font-size: 15px;
         text-align: center;
     }
 }
