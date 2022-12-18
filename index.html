@@ -594,10 +594,10 @@
 			<h1>Оценка Ремонта <span>Автомобиля</span></h1>
 			<p>Получите примерную оценку автомобиля на основе заполненных данных</p>
 			
-			<form class="container-fluid row">				
+			<form class="container-fluid">				
 
 				<!-- категория авто -->
-				<div class="form-category col-2">
+				<div class="form-category">
 					<input class="car-category text-black" list="carCategory" id="carCategoryList" placeholder="Категория">
 
 					<datalist id="carCategory">
@@ -607,7 +607,7 @@
 				</div>
 
 				<!-- марка авто -->
-				<div class="form-brand col-2">
+				<div class="form-brand">
 					<input class="car-brand" list="carBrand" id="carBrandList" placeholder="Марка">
 					
 					<datalist id="carBrand">
@@ -671,18 +671,18 @@
 				</div>
 
 				<!-- год выпуска авто -->
-				<div class="form-range col-2">
+				<div class="form-range">
 					<input class="date-range" list="dateRange" id="dateRangeList" placeholder="Год выпуска" type="datetime">
 					
 					<datalist id="dateRange"></datalist>
 				</div>
 
 				<!-- добавить файл -->
-				<div class="form-file col">					
+				<div class="form-file">					
 					<input type="file" name="file" id="inputGroupFile01" aria-describedby="inputGroupFileAddon01">					
 				</div>
 				
-				<button class="form-btn-send col-2">ОТПРАВИТЬ</button>
+				<button class="form-btn-send">ОТПРАВИТЬ</button>
 								
 			</form>
 		</div>
@@ -693,6 +693,10 @@
 		<div class="container-promo" id="promo">
 			<div class="promo">
 				<div class="promo-banner-img" style="background-image: url(icons/locksmith-work-1-grey.jpg);"></div>
+				
+				<div class="promo-banner-img-hide">
+					<img src="icons/locksmith-work-1-grey.jpg" alt="">
+				</div>
 
 				<div class="promo-coupon">
 					<div class="coupon-price">
@@ -884,22 +888,22 @@
 				</div>
 
 				<!-- Форма ввода в модальном окне -->
-				<div class="modal-form-box row">
-					<div class="col">
+				<div class="modal-form-box">
+					<div class="form-box-contacts">
 						<h3>Контакты</h3>
 						<input class="form-control" type="text" id="yourName" placeholder="Ваше имя">
 						<input class="form-control" type="text" id="yourPhone" placeholder="Ваш номер телефона">
 						<input class="form-control" type="text" id="yourEmail" placeholder=" Ваш e-mail">
 					</div>
 
-					<div class="col">
+					<div class="form-box-car">
 						<h3>Данные Авто</h3>
 						<input class="form-control" type="text" id="brandCar" placeholder="Марка авто">
 						<input class="form-control" type="text" id="modelCar" placeholder="Модель авто">
 						<input class="form-control" type="text" id="yearCar" placeholder="Год авто">
 					</div>
 
-					<div class="col">
+					<div class="form-box-info">
 						<h3>Информация</h3>
 						<input class="form-control" type="date" id="date" placeholder="">
 						<input class="form-control" type="time" id="time" placeholder="">
@@ -910,15 +914,15 @@
 				
 				<!-- Кнопки "Оттправить" и "Закрыть" в модальном окне -->
 				<div class="modal-btn-box">
-					<div>
+					<div class="modal-btn-box-p">
 						<p>Обратите, пожалуйста, внимание, что запрошенные Вами дата и время могут быть недоступны.</p>
 					</div>
 
-					<div>
+					<div class="modal-btn-box-send">
 						<button class="btn" id="submit">ОТПРАВИТЬ</button>
 					</div>
 
-					<div>
+					<div class="modal-btn-box-close">
 						<button class="btn-close-modal-window btn">ЗАКРЫТЬ</button>
 					</div>
 				</div>
