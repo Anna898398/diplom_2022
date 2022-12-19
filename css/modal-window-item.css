@@ -16,7 +16,9 @@
 	background: #000;
 	position: fixed; 
 	left: 0;
+	right: 0;
 	top: 0;
+	bottom: 0;
 	width: 100%;
 	opacity: 0.7;
 	z-index: 2;
@@ -24,74 +26,207 @@
 
 
 /* стили к HTML коду модального окна */
-.modal-window-content-1,
-.modal-window-content-2,
-.modal-window-content-3,
-.modal-window-content-4,
-.modal-window-content-5 {
+.modal-window-content {
 	position: fixed;
-	top: 0;
 	left: 0;
 	right: 0;
-	margin-left: auto;
-	margin-right: auto;
+	top: 0;
+	bottom: 0;
 	padding: 70px;
-	width: 70%;
-	height: 100vh;
 	background-color: #2d2d2d;
 	border: none;
 	z-index: 3;
 	opacity: 1;
 }
 
-.content-img {
+.modal-content-box {
 	display: flex;
-	width: 100%;
-	justify-content: space-between;
-	margin-bottom: 50px;
+}
+
+.content-img {
+	width: 180vw;
+	margin-right: 50px;
 }
 
 .content-img img{
-	width: 40%;
+	width: 100%;
 }
 
-.modal-window-content-1 h1,
-.modal-window-content-2 h1,
-.modal-window-content-3 h1,
-.modal-window-content-4 h1,
-.modal-window-content-5 h1 {
+.content-text {
+	width: 1fr;
+	margin-right: 70px;
+}
+
+.content-text h1 {
 	margin-bottom: 20px;
 	color: #4290e0;
-	font-size: 40px;
+	font-size: 3vw;
 	font-weight: 700;
+	text-align: center;
 }
 
-.modal-window-content-1 p,
-.modal-window-content-2 p,
-.modal-window-content-3 p,
-.modal-window-content-4 p,
-.modal-window-content-5 p  {
-	font-size: 16px;
+.content-text p {
+	font-size: 1.5vw;
 	color: #ffffff;
 }
 
+.content-text span {
+	font-size: 1.5vw;
+	font-weight: 600;
+	color: #ffffff;
+}
+
+.content-text ul {
+	font-size: 1.3vw;
+	margin: 20px 0 20px 30px;
+	color: #ffffff;
+}
+
+.content-text li {
+	font-size: 1.3vw;
+	color: #ffffff;
+}
+
+.content-btn {
+	width: 70px;
+	text-align: end;
+}
+
 .btn-close-modal-window-item {
-	width: 100px;
-	height: 100px;
+	width: 70px;
+	height: 70px;
     border: 2px solid #4290e0;
 	border-radius: 0;
-	margin-left: 40px;
     padding: 10px 0;
-    font-size: 30px;
+    font-size: 20px;
     font-weight: 900;
     color: #ffffff;
-    background-image: linear-gradient(135deg, #4290e0 50%, transparent 50%);
-    background-position: 100%;
-    background-size: 400%;
-    transition: background 400ms ease-in-out;
 }
 
 .btn-close-modal-window-item:hover {
     background-position: 0;    
 	color: #ffffff;
 }
+
+
+
+/* _____________________________________________________________ */
+
+
+
+@media screen and (min-width: 991px) and (max-width: 1300px) {
+	/* Модальное окно для 04-Что мы делаем?(основные услуги) */
+	.modal-window-item-1,
+	.modal-window-item-2,
+	.modal-window-item-3,
+	.modal-window-item-4,
+	.modal-window-item-5 {
+		display: none;
+	}
+
+	.modal-window-item-1:before,
+	.modal-window-item-2:before,
+	.modal-window-item-3:before,
+	.modal-window-item-4:before,
+	.modal-window-item-5:before {
+		content: '';
+		background: #000;
+		position: fixed; 
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		width: 100%;
+		opacity: 0.7;
+		z-index: 2;
+	}
+
+
+	/* стили к HTML коду модального окна */
+	.modal-window-content {
+		position: fixed;
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		padding: 50px;
+		background-color: #2d2d2d;
+		border: none;
+		z-index: 3;
+		opacity: 1;
+	}
+
+	.modal-content-box {
+		display: flex;
+	}
+
+	.content-img {
+		width: 200vw;
+		margin-right: 40px;
+	}
+
+	.content-img img{
+		width: 100%;
+	}
+
+	.content-text {
+		width: 1fr;
+		margin-right: 50px;
+	}
+
+	.content-text h1 {
+		margin-bottom: 20px;
+		color: #4290e0;
+		font-size: 3vw;
+		font-weight: 700;
+		text-align: center;
+	}
+
+	.content-text p {
+		font-size: 1.4vw;
+		color: #ffffff;
+	}
+
+	.content-text span {
+		font-size: 1.4vw;
+		font-weight: 600;
+		color: #ffffff;
+	}
+
+	.content-text ul {
+		font-size: 1.3vw;
+		margin: 20px 0 20px 30px;
+		color: #ffffff;
+	}
+
+	.content-text li {
+		font-size: 1.3vw;
+		color: #ffffff;
+	}
+
+	.content-btn {
+		width: 50px;
+		text-align: end;
+	}
+
+	.btn-close-modal-window-item {
+		width: 50px;
+		height: 50px;
+		border: 2px solid #4290e0;
+		border-radius: 0;
+		padding: 10px 0;
+		font-size: 20px;
+		font-weight: 900;
+		color: #ffffff;
+	}
+
+	.btn-close-modal-window-item:hover {
+		background-position: 0;    
+		color: #ffffff;
+	}
+}
+
+
+
+
+
