@@ -218,10 +218,7 @@
 
 
 /* квадрат-фото увеличивается при наведении на него */
-.box-img-1:hover img,
-.box-img-2:hover img,
-.box-img-3:hover img,
-.box-img-4:hover img {
+.box-img:hover img {
     transform: scale(1.5);
 }
 
