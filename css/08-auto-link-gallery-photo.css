@@ -662,11 +662,11 @@ header {
         font-weight: 800;
         color: #4290e0;
         text-align: center;
-        margin-bottom: 20px;
+        margin-bottom: 40px;
     }
     
     .carousel-inner {
-        width: 450px;
+        width: 600px;
         height: auto;
         margin: auto;
         background-color: antiquewhite;
