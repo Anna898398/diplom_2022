@@ -683,7 +683,7 @@ header {
 
 
 
-@media screen and (min-width: 790px) and (max-width: 990px) {
+@media screen and (min-width: 751px) and (max-width: 990px) {
     * {
         box-sizing: border-box;
     }
@@ -895,7 +895,7 @@ header {
     }
     
     .carousel-inner {
-        width: 400px;
+        width: 600px;
         height: auto;
         margin: auto;
         background-color: antiquewhite;
