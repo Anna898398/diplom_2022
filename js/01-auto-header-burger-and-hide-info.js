@@ -13,4 +13,4 @@ let menuElem = document.getElementById('sweeties');
 
     titleElem.onclick = function() {
       menuElem.classList.toggle('open');
-    };
+  };

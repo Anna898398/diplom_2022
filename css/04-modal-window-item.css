@@ -66,35 +66,35 @@
 }
 
 .content-text p {
-	font-size: 1.4vw;
+	font-size: 1.2vw;
 	color: #ffffff;
 }
 
 .content-text span {
-	font-size: 1.4vw;
+	font-size: 1.2vw;
 	font-weight: 600;
 	color: #ffffff;
 }
 
 .content-text ul {
-	font-size: 1.3vw;
+	font-size: 1.2vw;
 	margin: 20px 0 20px 30px;
 	color: #ffffff;
 }
 
 .content-text li {
-	font-size: 1.3vw;
+	font-size: 1.1vw;
 	color: #ffffff;
 }
 
 .content-btn {
-	width: 70px;
+	width: 60px;
 	text-align: end;
 }
 
 .btn-close-modal-window-item {
-	width: 70px;
-	height: 70px;
+	width: 60px;
+	height: 60px;
     border: 2px solid #4290e0;
 	border-radius: 0;
     padding: 10px 0;

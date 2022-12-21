@@ -72,7 +72,7 @@
 @media screen and (min-width: 1651px) {
     /* Раздел - наши преимущества */
     .container-advantages {
-        padding: 0 70px 70px 70px;
+        padding: 0 120px 70px 150px;
         color: #363636;
     }
 
@@ -97,26 +97,30 @@
     .advantage-box-1,
     .advantage-box-2,
     .advantage-box-3 {
-        width: 1fr;
+        width: 33.3%;
         display: flex;
     }
 
+   
     .advantage-box-img {
         width: 180px;
-        height: auto;
-        border-right: 3px solid #4290e0;
-        margin-right: 20px;
+        height: 70px;
+        border-right: 4px solid #4290e0;        
         padding-right: 15px;
+        margin-right: 20px;
         overflow: hidden;
     }
 
     .advantage-box-img img {
         width: 100%;
+    }    
+
+    .advantage-box-1 .advantage-box-text,
+    .advantage-box-2 .advantage-box-text {
+        margin: 0 10px 0 0;
+        padding: 0;
     }
 
-    .advantage-box-text {
-        margin: 0 20px 0 0;
-    }
 
     .advantage-box-text h3 {
         font-size: 30px;
